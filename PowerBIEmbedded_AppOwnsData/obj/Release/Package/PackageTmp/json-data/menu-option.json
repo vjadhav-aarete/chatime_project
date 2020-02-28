@@ -1,0 +1,65 @@
+[
+  {
+    "blockhead": "Quick Stats",
+    "blockid": "Quick Stats",
+    "blockimage": "./assets/images/Quick-Stats-icon.svg",
+    "fontIconClass": "icon-graph",
+    "blockText": "A Quick view of key live info for today & history for different states & locations.",
+    "submenu": [
+      "Quick Stats",
+      "Quick Stats Lfl"
+    ]
+  },
+  {
+    "blockhead": "Scorecard",
+    "blockid": "Scorecard",
+    "blockimage": "./assets/images/scoreboard-icon.svg",
+    "fontIconClass": "icon-download",
+    "blockText": "A Quick view of key live info for today & history for different states & locations.",
+    "submenu": [
+      "Scorecard Summary",
+      "Aggregated View",
+      "Monthly Run Rate"
+    ]
+  },
+  {
+    "blockhead": "Operations",
+    "blockid": "Operations",
+    "blockimage": "./assets/images/Operations-Icon.svg",
+    "fontIconClass": "icon-settings",
+    "blockText": "A Quick view of key live info for today & history for different states & locations.",
+    "submenu": [
+      "Operational Insights",
+      "Daily Labour Analysis",
+      "Actual Projected Labour",
+      "Sales by Product Hierarchy",
+      "Mystery Shopper & QAR"
+    ]
+  },
+  {
+    "blockhead": "Finance",
+    "blockid": "Finance",
+    "blockimage": "./assets/images/finance-icon.svg",
+    "fontIconClass": "icon-money",
+    "blockText": "A Quick view of key live info for today & history for different states & locations.",
+    "submenu": [
+      "P&L FY View",
+      "P&L Head Office View",
+      "P&L Multi Location View"
+    ]
+  },
+  {
+    "blockhead": "Head Office",
+    "blockid": "HeadOffice",
+    "blockimage": "./assets/images/head-office.svg",
+    "fontIconClass": "icon-business",
+    "blockText": "A Quick view of key live info for today & history for different states & locations."
+  },
+  {
+    "blockhead": "Help",
+    "blockid": "Help",
+    "blockimage": "./assets/images/exclamation-circle.svg",
+    "fontIconClass": "icon-alert",
+    "blockText": "A Quick view of key live info for today & history for different states & locations."
+  }
+]

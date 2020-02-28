@@ -1,0 +1,670 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../../fonts/icomoon.eot?f42n3r');
+    src: url('../../fonts/icomoon.eot?f42n3r#iefix') format('embedded-opentype'), url('../../fonts/icomoon.ttf?f42n3r') format('truetype'), url('../../fonts/icomoon.woff?f42n3r') format('woff'), url('../../fonts/icomoon.svg?f42n3r#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: "icomoon" !important;
+    speak: none;
+    font-style: normal;
+    /*font-weight: normal;*/
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #fff;
+    opacity: 0.2;
+    /*font-weight:100;*/
+}
+
+.icon-Filled---Refresh .path1:before {
+    content: "\e90a";
+    color: rgb(142, 94, 170);
+}
+
+.icon-Filled---Refresh .path2:before {
+    content: "\e90b";
+    margin-left: -1em;
+    color: rgb(234, 234, 234);
+}
+
+.icon-Filled-Outline .path1:before {
+    content: "\e90c";
+    color: rgb(142, 94, 170);
+}
+
+.icon-Filled-Outline .path2:before {
+    content: "\e90d";
+    margin-left: -1em;
+    color: rgb(234, 234, 234);
+}
+
+.icon-Filled-User .path1:before {
+    content: "\e90e";
+    color: rgb(142, 94, 170);
+}
+
+.icon-Filled-User .path2:before {
+    content: "\e90f";
+    margin-left: -1em;
+    color: rgb(234, 234, 234);
+}
+
+.icon-Refresh---Outline .path1:before {
+    content: "\e910";
+    color: rgb(142, 94, 170);
+}
+
+.icon-Refresh---Outline .path2:before {
+    content: "\e911";
+    margin-left: -1em;
+    color: rgb(234, 234, 234);
+}
+
+.icon-alert:before {
+    content: "\e900";
+}
+
+.icon-business:before {
+    content: "\e901";
+}
+
+.icon-download:before {
+    content: "\e902";
+}
+
+.icon-graph:before {
+    content: "\e903";
+}
+
+.icon-menu:before {
+    content: "\e904";
+}
+
+.icon-money:before {
+    content: "\e905";
+}
+
+.icon-refresh:before {
+    content: "\e906";
+}
+
+.icon-reports:before {
+    content: "\e907";
+}
+
+.icon-settings:before {
+    content: "\e908";
+}
+
+.icon-signout:before {
+    content: "\e909";
+}
+
+
+.navbar-list li:hover [class^="icon-"],
+.navbar-list li:hover [class*="icon-"] .logout li:hover img {
+    opacity: 1;
+    font-style: normal;
+    /*font-weight: normal;*/
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+}
+
+.inner-cont [class^="icon-"],
+.inner-cont [class*=" icon-"] {
+    color: #8e5eaa;
+    /*font-weight: 500;*/
+    opacity: 0.6;
+    font-size: 20px;
+}
+
+.navbar-list i {
+    float: right;
+}
+
+.chatime-Container {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-image: url('../../images/chatimeBG3x.png');
+    background-repeat: no-repeat;
+}
+
+.login-form-block {
+    position: absolute;
+    width: 320px;
+    height: 368px;
+    top: 50%;
+    left: 13%;
+    margin-top: -184px;
+    margin-left: -138px;
+}
+
+.wc-dashboard {
+    height: 35px;
+    width: 259px;
+    color: #eaeaea;
+    font-family: "Segoe UI";
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 35px;
+    margin-top: 28px;
+    margin-bottom: 42px;
+}
+
+.chatime-label {
+    height: 20px;
+    width: 68px;
+    color: #8e5eaa;
+    font-family: "Segoe UI";
+    font-size: 15.12px;
+    line-height: 20px;
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.asteric {
+    color: #8e5eaa;
+}
+
+.chatime-input {
+    height: 43.2px;
+    width: 253.8px;
+    border-radius: 6px;
+    background-color: #501F6D;
+    color: #eaeaea;
+    font-family: "Segoe UI";
+    font-size: 15.12px;
+    line-height: 20px;
+    border: none;
+    float:left;
+    z-index:999;
+    padding: 0 16px;
+    margin-bottom: 17px;
+    font-weight: 500;
+    border: 1px solid transparent;
+}
+
+    .chatime-input:focus {
+        border: 1px solid #8e5eaa;
+    }
+
+.chatime-login {
+    height: 37.8px;
+    width: 86.4px;
+    border-radius: 3.24px;
+    background-color: #d8d8d8;
+    color: #5e2b7c;
+    font-family: "Segoe UI";
+    font-size: 12.96px;
+    font-weight: bold;
+    line-height: 17px;
+    border: none;
+    float: left;
+    text-transform: uppercase;
+}
+
+.button-cont {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.chatime-topBar {
+    /* height: 65px;
+  width: 100%;
+  background-color: #5e2b7c; */
+}
+
+.sidebar {
+    height: 100%;
+    position: absolute;
+}
+
+.logout {
+    position: absolute;
+    bottom: 0;
+    width: 236px;
+}
+/* .navbar-list,
+.logout { */
+
+.sidebar {
+    width: 236px;
+    margin-left: -175px;
+    text-transform: uppercase;
+    /*-webkit-transform: translateZ(0) scale(1, 1);*/
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    background-color: #501f6d;
+    z-index: 999;
+}
+
+    .sidebar i {
+        font-size: 16px;
+    }
+
+.sidebarActive {
+    margin-left: 0px !important;
+}
+
+.sidebarInactive {
+    margin-left: -175px !important;
+}
+
+.navbar-list .option-head,
+.logout .option-head {
+    width: 152px;
+    display: inline-block;
+    text-align: right;
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-size: 12px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.navbar-list img,
+.logout img,
+.logout i {
+    opacity: 0.2;
+    float: right;
+}
+
+.navbar-list li:hover img,
+.logout li:hover img,
+.logout li:hover i {
+    opacity: 1;
+}
+
+.navbar-list li:hover,
+.logout li:hover {
+    background-color: #683984;
+}
+
+li.head-block-list {
+    padding: 20px 23px 20px 10px;
+    cursor: pointer;
+    position: relative
+}
+/*.sidebarActive li.head-block-list:hover .submenu {
+    display: block;
+}*/
+.submenu {
+    width: 150px;
+    color: #c8c8c8;
+    font-family: "Segoe UI";
+    font-size: 11px;
+    line-height: 30px;
+    text-align: right;
+    display: none;
+    margin-top: 18px;
+    text-transform: capitalize;
+}
+
+.submenu-new {
+    color: #c8c8c8;
+    font-family: "Segoe UI";
+    font-size: 11px;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+
+    .submenu li:hover,
+    .submenu-new li:hover {
+        color: #fff;
+        font-weight: bold;
+    }
+
+.menu-icon-top {
+    width: 60px;
+    height: 65px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 65px;
+    cursor: pointer;
+}
+
+    .menu-icon-top img {
+        vertical-align: middle;
+    }
+
+.chatime-logo-top {
+    height: 65px;
+    line-height: 65px;
+    float: left;
+}
+
+    .chatime-logo-top img {
+        cursor: pointer;
+        width: 130px;
+        height: 27px;
+        margin-left: 84px;
+    }
+
+.dateandupload {
+    width: 260px;
+    float: right;
+    text-align: left;
+    color: #eaeaea;
+    font-family: "Segoe UI";
+    font-size: 12px;
+    font-weight: 600;
+    height: 65px;
+    line-height: 65px;
+}
+
+.dashboard-cont {
+    position: absolute;
+    left: 7%;
+    top: 29%;
+}
+
+.chatime-liner {
+    height: 32px;
+    width: 100%;
+    color: #eaeaea;
+    font-family: "Segoe UI";
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 32px;
+    float: left;
+    margin-bottom: 28px;
+}
+
+.w100 {
+    width: 100%;
+}
+
+    .w100 img {
+        height: 33px;
+        width: 158px;
+        margin-bottom: 8px;
+    }
+
+.dashboard-blocks {
+    clear: both;
+    width: 850px;
+}
+
+.container {
+    margin: 10px 6px 0 0;
+    width: 209px;
+    background-color: #fff;
+    padding: 24px 25px 26px 25px;
+    border-radius: 3px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+    .container:hover {
+        background-color: #743997;
+    }
+
+        .container:hover .svg path {
+            fill: red;
+        }
+/*.container:hover .details{
+        font-weight:100
+    }*/
+.name {
+    height: 21px;
+    width: 100%;
+    color: #4a4a4a;
+    font-family: "Segoe UI";
+    font-size: 16px;
+    line-height: 21px;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+.container:hover .name,
+.container:hover .details {
+    color: #fff;
+}
+
+.container:hover i {
+    color: #fff;
+    font-weight: unset !important;
+}
+
+.details {
+    height: 24px;
+    width: 100%;
+    opacity: 0.6;
+    color: #4a4a4a;
+    font-family: "Segoe UI";
+    font-size: 11px;
+    line-height: 16px;
+    margin-top: 14px;
+    /*font-weight: 500;*/
+}
+
+svg {
+    color: red;
+}
+
+.container:hover svg {
+    color: #fff;
+}
+
+.chatime-logo img {
+    width: 196px;
+    height: 41px;
+}
+
+.dateandupload p {
+    display: inline-block;
+    font-weight: 100;
+}
+
+.sync,
+.download-block {
+    height: 22px;
+    vertical-align: middle;
+    width: 22px;
+    text-align: center;
+    border: 1px solid #743997;
+    position: relative;
+    border-radius: 22px;
+    margin-left: 12px;
+}
+
+    .sync img, .sync i {
+        position: absolute;
+        top: 24%;
+        left: 26%;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+    .download-block img, .download-block i {
+        position: absolute;
+        top: 24%;
+        left: 30%;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .sync:hover,
+    .download-block:hover {
+        background-color: #743997;
+    }
+
+.showDate {
+    margin-right: 9px;
+}
+
+.topMenu {
+    padding: 30px 22px 34px 0 !important;
+    /*background-color: #5E2B7C;*/
+}
+
+.chatimeLink {
+    width: auto;
+    float: right;
+    position: absolute;
+    right: 4%;
+    bottom: 8%;
+}
+
+    .chatimeLink a {
+        color: #eaeaea;
+        font-family: "Segoe UI";
+        font-size: 16px;
+        font-weight: 300;
+        text-decoration: none;
+    }
+
+input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 0.2; /* Firefox */
+    font-weight: 100;
+}
+
+input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #fff;
+}
+
+input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #fff;
+}
+
+#dashboardcontainer {
+    background-color: #5E2B7C;
+    background-image: none !important
+}
+
+/*#report-container {
+    position: absolute;
+    float: left
+}*/
+
+.error-message {
+    height: 16px;
+    width: 101px;
+    color: #ff7d7d;
+    font-family: "Segoe UI";
+    font-size: 12px;
+    line-height: 16px;
+    float: left;
+    position: absolute;
+    bottom: 33px;
+}
+
+.submenuOnifHover {
+    display: none;
+}
+
+.sidebarInactive li.head-block-list:hover > .submenuOnifHover {
+    display: block;
+    position: absolute;
+    margin-left: 226px;
+    background-color: #683984;
+    top: 0px;
+    text-align: left;
+    width: 166px;
+    color: #fff;
+    font-size: 10px;
+    line-height: 18px;
+    font-family: segoe UI;
+    padding: 20px 10px 20px 25px;
+}
+
+.mobile-landind,
+.blueDot {
+    display: none
+}
+
+.submenu-new li:hover .blueDot,
+.submenu li:hover .blueDot {
+    display: inline-block
+}
+
+.blueDot {
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background: #fff;
+    position: absolute;
+    margin: 13px 0 0 8px;
+    opacity: 0.2
+}
+
+.orientation {
+    display: none
+}
+
+.icon-business {
+    margin-right: -2px
+}
+
+.sidebarActive .navbar-list {
+    max-height: 500px;
+    overflow-x: auto
+}
+
+.navbar-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.navbar-list::-webkit-scrollbar-track {
+    background: #673883;
+}
+
+/* Handle */
+.navbar-list::-webkit-scrollbar-thumb {
+    background: #673883;
+}
+
+    /* Handle on hover */
+    .navbar-list::-webkit-scrollbar-thumb:hover {
+        background: #673883;
+    }
+.headOfficeBg {
+    background-image: url('../../images/headofcbg.png');
+    width: 96%;
+    height: 91%;
+    background-repeat: no-repeat;
+    margin-left: 4%;
+    margin-top: 4%;
+    position: absolute;
+    background-size: cover;
+}
+
+.headerBlock {
+    margin: 8% 4% 4%;
+    font-family: segoe ui;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.subLinks p {
+    margin: 2% 4%;
+    font-family: segoe UI;
+    color: darkslateblue;
+    font-weight: 500;
+}
+
+.BrewerySalesTrend {
+    text-align: center;
+    font-family: 'Segoe UI';
+    text-decoration: underline;
+    color: darkslateblue;
+    font-weight: 500;
+}

@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="~/Content/style/reset.css" rel="stylesheet" />
+    <link rel="stylesheet" media="screen and (max-width: 1023px)" href="~/Content/style/mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1024px)" href="~/Content/style/chatime.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="chatime-Container">
+        <div class="desktop_cont">
+            <div class="chatime-topBar">
+                <div class="chatime-logo-top" onclick="goToLandingPage()">
+                    <img src="../images/chatimeLogo3x.png" />
+                </div>
+                <div class="dateandupload">
+                    <p class="showDate">As of Date: <span class="todays-date"></span></p>
+                    <p class="sync">
+                        <i class="icon-refresh"></i>
+                    </p>
+                    <p class="download-block">
+                        <i class="icon-reports"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="sidebar-container">
+                <div class="sidebar sidebarInactive">
+                    <nav class="navigation">
+                        <ul class="navbar-list">
+                        </ul>
+                        <ul class="logout">
+                            <li class="head-block-list" style="margin-bottom: 50px;cursor:pointer" id="logoutBtn">
+                                <span class="option-head"> Logout</span>
+                                <i class="icon-signout"></i>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="headOfficeBg">
+                <p class="headerBlock">Head Office - Marketing</p>
+                <div class="subLinks">
+                    <p><a href="">App and UberEats Sales</a></p>
+                    <p><a href="">Blueberry Sales Report</a></p>
+                    <p><a href="">Member Analysis - ATV</a></p>
+                    <p><a href="">MixIns Report</a></p>
+                    <p><a href="">Product Sales (Cube) </a></p>
+                    <p><a href="">Sales by Transaction Report</a></p>
+                    <p><a href="">Top 20 Member Report By Store</a></p>
+                    <p><a href="">Brewery Sales Trend</a></p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mobile-parent-container">
+            <div class="mobile-landind">
+                <div class="mobile-top-bar">
+                    <div class="mobile-menu-icon"> <i class="icon-menu" style="font-size: 13px;"></i></div>
+                    <div class="mobile-chatime-logo"><img src="~/images/chatimeLogo3x.png" alt="chatime" title="chatime" /></div>
+                    <div class="mobile-refresh-icon"><p class="sync"><i class="icon-refresh"></i></p></div>
+                    <div class="mobile-user-icon"><p class="download-block"><i class="icon-reports"></i></p></div>
+                </div>
+
+                <div class="m_menubar_overlay">
+                    <div class="append-options"></div>
+                    <div class="m_logout">Logout</div>
+                    <div class="close-overlay"><img src="~/images/mobile-images/Close-Button.svg" /></div>
+                </div>
+            </div>
+            <div class="orientation">
+                <p><img src="~/images/mobile-images/Device-Rotate-Icon.svg" alt="rotate device" /></p>
+                <p>We do not support landscape mode</p>
+                <p>Please rotate your device and browse in portrait mode </p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // debugger;
+            console.log(localStorage.getItem("auth"));
+            if (localStorage.getItem("auth") === "" || localStorage.getItem("auth") === null) {
+                window.location.href = "http://localhost:42734/Home/Index";
+            }
+            //check ideal time of user
+            var IDLE_TIMEOUT = 10; //seconds
+            var _idleSecondsTimer = null;
+            var _idleSecondsCounter = 0;
+
+            document.onclick = function () {
+                _idleSecondsCounter = 0;
+            };
+
+            document.onmousemove = function () {
+                _idleSecondsCounter = 0;
+            };
+
+            document.onkeypress = function () {
+                _idleSecondsCounter = 0;
+            };
+
+            _idleSecondsTimer = window.setInterval(CheckIdleTime, 1000);
+
+            function CheckIdleTime() {
+                _idleSecondsCounter++;
+                // console.log((IDLE_TIMEOUT - _idleSecondsCounter) + "")
+                if (_idleSecondsCounter >= IDLE_TIMEOUT) {
+                    $(".container, .topMenu, .head-block-list, .submenu-new li, .download-block, .sync").click(function () {
+                        window.clearInterval(_idleSecondsTimer);
+                        //alert("Time expired!");
+                        localStorage.clear();
+                        window.location.href = baseURL + "Home/Index";
+                        console.log(localStorage.getItem("auth"));
+                    });
+                }
+            }
+                
+        });
+        function goToLandingPage() {
+                //debugger;
+                window.location.href = baseURL + "Home/Landing";
+        }
+
+    </script>
+    <script type="text/javascript" src="~/scripts/chatime.js"></script>
+    <script type="text/javascript" src="~/scripts/chatime-events.js"></script>
+</body>
+</html>

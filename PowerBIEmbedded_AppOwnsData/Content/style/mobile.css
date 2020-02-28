@@ -1,0 +1,425 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../../fonts/icomoon.eot?f42n3r');
+    src: url('../../fonts/icomoon.eot?f42n3r#iefix') format('embedded-opentype'), url('../../fonts/icomoon.ttf?f42n3r') format('truetype'), url('../../fonts/icomoon.woff?f42n3r') format('woff'), url('../../fonts/icomoon.svg?f42n3r#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: "icomoon" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #fff;
+    opacity: 0.2;
+    font-size: 12px
+    /*font-weight:100;*/
+}
+
+.icon-Filled---Refresh .path1:before {
+    content: "\e90a";
+    color: rgb(142, 94, 170);
+}
+
+.icon-Filled---Refresh .path2:before {
+    content: "\e90b";
+    margin-left: -1em;
+    color: rgb(234, 234, 234);
+}
+
+.icon-Filled-Outline .path1:before {
+    content: "\e90c";
+    color: rgb(142, 94, 170);
+}
+
+.icon-Filled-Outline .path2:before {
+    content: "\e90d";
+    margin-left: -1em;
+    color: rgb(234, 234, 234);
+}
+
+.icon-Filled-User .path1:before {
+    content: "\e90e";
+    color: rgb(142, 94, 170);
+}
+
+.icon-Filled-User .path2:before {
+    content: "\e90f";
+    margin-left: -1em;
+    color: rgb(234, 234, 234);
+}
+
+.icon-Refresh---Outline .path1:before {
+    content: "\e910";
+    color: rgb(142, 94, 170);
+}
+
+.icon-Refresh---Outline .path2:before {
+    content: "\e911";
+    margin-left: -1em;
+    color: rgb(234, 234, 234);
+}
+
+.icon-alert:before {
+    content: "\e900";
+}
+
+.icon-business:before {
+    content: "\e901";
+}
+
+.icon-download:before {
+    content: "\e902";
+}
+
+.icon-graph:before {
+    content: "\e903";
+}
+
+.icon-menu:before {
+    content: "\e904";
+}
+
+.icon-money:before {
+    content: "\e905";
+}
+
+.icon-refresh:before {
+    content: "\e906";
+}
+
+.icon-reports:before {
+    content: "\e907";
+}
+
+.icon-settings:before {
+    content: "\e908";
+}
+
+.icon-signout:before {
+    content: "\e909";
+}
+
+
+
+.chatime-Container {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-image: url("../../images/BG-mobile@3x.png");
+    background-repeat: no-repeat;
+}
+
+.desktop_cont {
+    display: none
+}
+
+.login-form-block {
+    position: absolute;
+    width: 80%;
+    height: 394px;
+    margin: 0 auto;
+    top: 30%;
+    left: 50%;
+    margin-top: -197px;
+    margin-left: -40%;
+}
+
+.chatime-logo {
+    text-align: center;
+}
+
+.wc-dashboard {
+    height: 35px;
+    /*width: 259px;*/
+    color: #eaeaea;
+    font-family: "Segoe UI";
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 35px;
+    margin-top: 28px;
+    margin-bottom: 42px;
+    text-align: center;
+}
+
+.chatime-label {
+    height: 20px;
+    width: 68px;
+    color: #8e5eaa;
+    font-family: "Segoe UI";
+    font-size: 15.12px;
+    line-height: 20px;
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    font-weight: 500
+}
+
+.asteric {
+    color: #8e5eaa;
+}
+
+.chatime-input {
+    height: 43.2px;
+    width: 92%;
+    border-radius: 2.16px;
+    background-color: #5e2b7c;
+    color: #eaeaea;
+    font-family: "Segoe UI";
+    font-size: 15.12px;
+    line-height: 20px;
+    border: none;
+    z-index:999;
+    padding: 0 4%;
+    font-weight: 500;
+    margin-bottom: 20px;clear:both;
+}
+
+.chatime-login {
+    height: 42px;
+    width: 100%;
+    border-radius: 3.24px;
+    background-color: #d8d8d8;
+    color: #5e2b7c;
+    font-family: "Segoe UI";
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 18px;
+    border: none;
+    float: left;
+    text-transform: uppercase;
+}
+
+.button-cont {
+    float: left;
+    width: 100%;
+    margin-top: 28px;
+}
+
+.chatime-logo img {
+    width: 196px;
+    height: 41px;
+}
+
+.chatimeLink {
+    display: none
+}
+
+.orientation {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Segoe UI";
+    line-height: 30px;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    margin-top: -150px;
+    margin-left: -50%;
+    top: 50%;
+    left: 50%;
+}
+
+.mobile-parent-container {
+    overflow: hidden
+}
+
+.mobile-top-bar {
+    width: 86%;
+    padding: 7%;
+    height: 12px;
+}
+
+.mobile-menu-icon, .mobile-chatime-logo, .mobile-refresh-icon, .mobile-user-icon, .mobile_tagLine {
+    float: left;
+    text-align: center
+}
+
+.mobile-menu-icon {
+    text-align: left;
+}
+
+    .mobile-menu-icon i {
+        cursor: pointer
+    }
+
+.mobile-menu-icon, .mobile-user-icon {
+    width: 10%;
+}
+
+.mobile-refresh-icon {
+    width: 13%
+}
+
+.mobile-chatime-logo {
+    width: 66%;
+    margin-top: -2%;
+}
+
+    .mobile-chatime-logo img {
+        width: 120px;
+        cursor:pointer;
+    }
+
+.sync, .download-block {
+    height: 22px;
+    vertical-align: middle;
+    width: 22px;
+    text-align: center;
+    border: 1px solid #743997;
+    position: relative;
+    border-radius: 22px;
+    margin-left: 12px;
+    margin-top: -4px;
+}
+
+    .sync i {
+        position: absolute;
+        top: 23%;
+        left: 26%;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .download-block i {
+        position: absolute;
+        top: 23%;
+        left: 32%;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+.mobile_tagLine {
+    height: 64px;
+    width: 100%;
+    color: #EAEAEA;
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 64px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.sync:focus,
+.download-block:focus {
+    background-color: #743997;
+}
+
+.mobile-landing-options {
+    float: left;
+    width: 86%;
+    padding: 3% 7%;
+}
+
+.m_option_parent {
+    background-color: #fff;
+    color: #5E2B7C;
+    font-family: "Segoe UI";
+    font-size: 20px;
+    padding: 6%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    cursor: pointer
+}
+
+    .m_option_parent i {
+        color: #5e2b7c;
+        font-size: 20px;
+    }
+
+.m_option_title {
+    margin-left: 12px;
+    margin-top: -1px;
+    position: absolute;
+}
+
+.m_mobile_alert {
+    float: right;
+    opacity: 0.4;
+}
+
+    .m_mobile_alert i {
+        font-size: 18px
+    }
+
+.m_menubar_overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(80,31,109,0.98);
+    /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    padding: 40px 0;
+}
+
+.m_overlay_parent, .m_logout {
+    color: #eaeaea;
+    font-size: 24px;
+    margin-bottom: 35px;
+    text-align: center;
+    font-family: 'Segoe UI';
+    padding: 10px 0;
+}
+
+.m_overlay_submenu {
+    display: none;
+    margin-top: 20px;
+    line-height: 34px;
+}
+
+.close-overlay {
+    color: #fff;
+    text-align: center;
+}
+
+#report-container {
+    position: absolute;
+    float: left
+}
+
+#reportFrame {
+    width: 100vw;
+    height: 100vh;
+}
+
+.activeDot {
+    display: none;
+}
+
+@media screen and (orientation: landscape) {
+    .login-form-block, .mobile-landind, .desktop_cont {
+        display: none
+    }
+
+    .orientation {
+        display: block;
+    }
+}
+
+
+@media screen and (orientation: portrait) {
+    .orientation {
+        display: none
+    }
+}
+
+#report-container1 {
+    width: 100vw;
+    height: 100vh
+}
