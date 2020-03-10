@@ -52,7 +52,14 @@ namespace PowerBIEmbedded_AppOwnsData.Controllers
         private readonly IEmbedService m_HOFBST;
 
         //Note: Head Office Marketing Reports Variable
-
+        private readonly IEmbedService m_HOMAAUES;
+        private readonly IEmbedService m_HOMBSR;
+        private readonly IEmbedService m_HOMMAATV;
+        private readonly IEmbedService m_HOMMR;
+        private readonly IEmbedService m_HOMPSC;
+        private readonly IEmbedService m_HOMSBTR;
+        private readonly IEmbedService m_HOMTTMRBS;
+        private readonly IEmbedService m_HOMBST;
 
         //Note: Help Reports Variable
         private readonly IEmbedService m_HelpReport;
@@ -95,6 +102,15 @@ namespace PowerBIEmbedded_AppOwnsData.Controllers
             m_HOFLSSFY = new HOFLSSFY();
             m_HOFLSSF = new HOFLSSF();
             m_HOFBST = new HOFBST();
+            //Note: Head Offfice Marketing Constructor Call
+            m_HOMAAUES = new HOMAAUES();
+            m_HOMBSR = new HOMBSR();
+            m_HOMMAATV = new HOMMAATV();
+            m_HOMMR = new HOMMR();
+            m_HOMPSC = new HOMPSC();
+            m_HOMSBTR = new HOMSBTR();
+            m_HOMTTMRBS = new HOMTTMRBS();
+            m_HOMBST = new HOMBST();
             //Note: Help Report constructor call
             m_HelpReport = new HelpReportService();
             //Note: Mobile Reports constructor call
@@ -143,7 +159,7 @@ namespace PowerBIEmbedded_AppOwnsData.Controllers
                 {
                     embedResult = await m_QuickStatLFL_Mobile.EmbedReport(username, roles);
                 }
-                else if (reportName.ToLower() == "daily labour analysis")
+                else if (reportName.ToLower() == "operations")
                 {
                     embedResult = await m_DailyLabour_Mobile.EmbedReport(username, roles);
                 }
@@ -161,109 +177,148 @@ namespace PowerBIEmbedded_AppOwnsData.Controllers
                     {
                         return View(m_QuickStatLFL_Mobile.EmbedConfig);
                     }
-                    else if (reportName.ToLower() == "daily labour analysis")
+                    else if (reportName.ToLower() == "operations")
                     {
                         return View(m_DailyLabour_Mobile.EmbedConfig);
                     }
                     else
                     {
                         return View(m_SCSummary_Mobile.EmbedConfig);
-                    }    
-                } 
+                    }
+                }
                 else
                 {
                     return View(m_embedService.EmbedConfig);
                 }
             }
             //
-            else { 
-            //Note: QuickStats All Report
-            if (reportName.ToLower() == "quick stats")
-            {
-                embedResult = await m_embedService.EmbedReport(username, roles);
-            }
-            else if (reportName.ToLower() == "quick stats lfl")
-            {
-                embedResult = await m_LFLembedService.EmbedReport(username, roles);
-            }
-            //Note: Finance all the view
-            else if (reportName.ToLower() == "pl fy view")
-            {
-                embedResult = await m_FinanceFYview.EmbedReport(username, roles);
-            }
-            else if (reportName.ToLower() == "pl head office view")
-            {
-                embedResult = await m_FinanceHOview.EmbedReport(username, roles);
-            }
-            else if (reportName.ToLower() == "pl multi location view")
-            {
-                embedResult = await m_FinanceMLview.EmbedReport(username, roles);
-            }
-            //Note: Operational All Report
-            else if (reportName.ToLower() == "operational insights")
-            {
-                embedResult = await m_OpInsights.EmbedReport(username, roles);
-            }
-            else if (reportName.ToLower() == "daily labour analysis")
-            {
-                embedResult = await m_OpDailyLabourAnalysis.EmbedReport(username, roles);
-            }
-            else if (reportName.ToLower() == "actual projected labour")
-            {
-                embedResult = await m_OpActualProjectLabour.EmbedReport(username, roles);
-            }
-            else if (reportName.ToLower() == "sales by product hierarchy")
-            {
-                embedResult = await m_OpSalesByProductHierarchy.EmbedReport(username, roles);
-            }
-            else if (reportName.ToLower() == "mystery shopper  qar")
-            {
-                embedResult = await m_OpMysteryShopperQAR.EmbedReport(username, roles);
-            }
-            //Note: Head Office All Report
-            else if (reportName.ToLower() == "finance")
-            {
-                embedResult = await m_FinanceReport.EmbedReport(username, roles);
-            }
-            else if (reportName.ToLower() == "marketing")
-            {
-                embedResult = await m_MarketingReport.EmbedReport(username, roles);
-            }
+            else {
+                //Note: QuickStats All Report
+                if (reportName.ToLower() == "quick stats")
+                {
+                    embedResult = await m_embedService.EmbedReport(username, roles);
+                }
+                else if (reportName.ToLower() == "quick stats lfl")
+                {
+                    embedResult = await m_LFLembedService.EmbedReport(username, roles);
+                }
+                //Note: Finance all the view
+                else if (reportName.ToLower() == "pl fy view")
+                {
+                    embedResult = await m_FinanceFYview.EmbedReport(username, roles);
+                }
+                else if (reportName.ToLower() == "pl head office view")
+                {
+                    embedResult = await m_FinanceHOview.EmbedReport(username, roles);
+                }
+                else if (reportName.ToLower() == "pl multi location view")
+                {
+                    embedResult = await m_FinanceMLview.EmbedReport(username, roles);
+                }
+                //Note: Operational All Report
+                else if (reportName.ToLower() == "operational insights")
+                {
+                    embedResult = await m_OpInsights.EmbedReport(username, roles);
+                }
+                else if (reportName.ToLower() == "daily labour analysis")
+                {
+                    embedResult = await m_OpDailyLabourAnalysis.EmbedReport(username, roles);
+                }
+                else if (reportName.ToLower() == "actual projected labour")
+                {
+                    embedResult = await m_OpActualProjectLabour.EmbedReport(username, roles);
+                }
+                else if (reportName.ToLower() == "sales by product hierarchy")
+                {
+                    embedResult = await m_OpSalesByProductHierarchy.EmbedReport(username, roles);
+                }
+                else if (reportName.ToLower() == "mystery shopper  qar")
+                {
+                    embedResult = await m_OpMysteryShopperQAR.EmbedReport(username, roles);
+                }
+                //Note: Head Office All Report
+                else if (reportName.ToLower() == "finance")
+                {
+                    embedResult = await m_FinanceReport.EmbedReport(username, roles);
+                }
+                else if (reportName.ToLower() == "marketing")
+                {
+                    embedResult = await m_MarketingReport.EmbedReport(username, roles);
+                }
 
-            //Note: Head Office Finance All Report  
-            else if (reportName.ToLower() == "daily corp store stats report")
-            {
-                embedResult = await m_HOFDCSSR.EmbedReport(username, roles);
-            }
-            else if (reportName.ToLower() == "sales by date by media type")
-            {
-                 embedResult = await m_HOFSBDBMT.EmbedReport(username, roles);
-            }
-                else if (reportName.ToLower() == "summary scorecard finance weekly")
+                //Note: Head Office Finance All Report  
+                else if (reportName.ToLower()=="hofinance") {
+                    var sName = Request.QueryString["sname"].ToString();
+                if (sName == "fr1")
+                {
+                    embedResult = await m_HOFDCSSR.EmbedReport(username, roles);
+                }
+                else if (sName == "fr2")
+                {
+                    embedResult = await m_HOFSBDBMT.EmbedReport(username, roles);
+                }
+                else if (sName == "fr3")
                 {
                     embedResult = await m_HOFSSFW.EmbedReport(username, roles);
                 }
-                else if (reportName.ToLower() == "gift card sales")
+                else if (sName == "fr4")
                 {
                     embedResult = await m_HOFGCS.EmbedReport(username, roles);
                 }
-                else if (reportName.ToLower() == "summary scorecard finance month and year")
+                else if (sName == "fr5")
                 {
                     embedResult = await m_HOFSSFMY.EmbedReport(username, roles);
                 }
-                else if (reportName.ToLower() == "lfl summary scorecard finance year")
+                else if (sName == "fr6")
                 {
                     embedResult = await m_HOFLSSFY.EmbedReport(username, roles);
                 }
-                else if (reportName.ToLower() == "lfl summary scorecard finance")
+                else if (sName == "fr7")
                 {
                     embedResult = await m_HOFLSSF.EmbedReport(username, roles);
                 }
-                else if (reportName.ToLower() == "brewery sales trend")
+                else
                 {
                     embedResult = await m_HOFBST.EmbedReport(username, roles);
                 }
-
+            }
+                //Note: Head Office Marketing All Report Service
+                else if (reportName.ToLower() == "homarketing")
+                {
+                    var sName = Request.QueryString["sname"].ToString();
+                    if (sName == "mr1")
+                    {
+                        embedResult = await m_HOMAAUES.EmbedReport(username, roles);
+                    }
+                    else if(sName == "mr2")
+                    {
+                        embedResult = await m_HOMBSR.EmbedReport(username, roles);
+                    }
+                    else if (sName == "mr3")
+                    {
+                        embedResult = await m_HOMMAATV.EmbedReport(username, roles);
+                    }
+                    else if (sName == "mr4")
+                    {
+                        embedResult = await m_HOMMR.EmbedReport(username, roles);
+                    }
+                    else if (sName == "mr5")
+                    {
+                        embedResult = await m_HOMPSC.EmbedReport(username, roles);
+                    }
+                    else if (sName == "mr6")
+                    {
+                        embedResult = await m_HOMSBTR.EmbedReport(username, roles);
+                    }
+                    else if (sName == "mr7")
+                    {
+                        embedResult = await m_HOMTTMRBS.EmbedReport(username, roles);
+                    }
+                    else
+                    {
+                        embedResult = await m_HOMBST.EmbedReport(username, roles);
+                    }
+                }
                 //Note: Help Report Service
                 else if (reportName.ToLower() == "dashboard help")
             {
@@ -284,104 +339,144 @@ namespace PowerBIEmbedded_AppOwnsData.Controllers
                 embedResult = await m_SCMonthlyRunRate.EmbedReport(username, roles);
             }
 
-            if (embedResult)
-            {
-                //Note: Quick Stat Report View
-                if (reportName.ToLower() == "quick stats")
+                if (embedResult)
                 {
-                    return View(m_embedService.EmbedConfig);
-                }
-                else if (reportName.ToLower() == "quick stats lfl")
-                {
-                    return View(m_LFLembedService.EmbedConfig);
-                }
+                    //Note: Quick Stat Report View
+                    if (reportName.ToLower() == "quick stats")
+                    {
+                        return View(m_embedService.EmbedConfig);
+                    }
+                    else if (reportName.ToLower() == "quick stats lfl")
+                    {
+                        return View(m_LFLembedService.EmbedConfig);
+                    }
 
-                //Note: Finance Report View
-                else if (reportName.ToLower() == "pl fy view")
-                {
-                    return View(m_FinanceFYview.EmbedConfig);
-                }
-                else if (reportName.ToLower() == "pl head office view")
-                {
-                    return View(m_FinanceHOview.EmbedConfig);
-                }
-                else if (reportName.ToLower() == "pl multi location view")
-                {
-                    return View(m_FinanceMLview.EmbedConfig);
-                }
-                //Note: Operational Report View
-                else if (reportName.ToLower() == "operational insights")
-                {
-                    return View(m_OpInsights.EmbedConfig);
-                }
-                else if (reportName.ToLower() == "daily labour analysis")
-                {
-                    return View(m_OpDailyLabourAnalysis.EmbedConfig);
-                }
-                else if (reportName.ToLower() == "actual projected labour")
-                {
-                    return View(m_OpActualProjectLabour.EmbedConfig);
-                }
-                else if (reportName.ToLower() == "sales by product hierarchy")
-                {
-                    return View(m_OpSalesByProductHierarchy.EmbedConfig);
-                }
-                else if (reportName.ToLower() == "mystery shopper  qar")
-                {
-                    return View(m_OpMysteryShopperQAR.EmbedConfig);
-                }
-                //Note: Head Office All Report
-                else if (reportName.ToLower() == "finance")
-                {
-                    return View(m_FinanceReport.EmbedConfig);
-                }
-                else if (reportName.ToLower() == "marketing")
-                {
-                    return View(m_MarketingReport.EmbedConfig);
-                }
+                    //Note: Finance Report View
+                    else if (reportName.ToLower() == "pl fy view")
+                    {
+                        return View(m_FinanceFYview.EmbedConfig);
+                    }
+                    else if (reportName.ToLower() == "pl head office view")
+                    {
+                        return View(m_FinanceHOview.EmbedConfig);
+                    }
+                    else if (reportName.ToLower() == "pl multi location view")
+                    {
+                        return View(m_FinanceMLview.EmbedConfig);
+                    }
+                    //Note: Operational Report View
+                    else if (reportName.ToLower() == "operational insights")
+                    {
+                        return View(m_OpInsights.EmbedConfig);
+                    }
+                    else if (reportName.ToLower() == "daily labour analysis")
+                    {
+                        return View(m_OpDailyLabourAnalysis.EmbedConfig);
+                    }
+                    else if (reportName.ToLower() == "actual projected labour")
+                    {
+                        return View(m_OpActualProjectLabour.EmbedConfig);
+                    }
+                    else if (reportName.ToLower() == "sales by product hierarchy")
+                    {
+                        return View(m_OpSalesByProductHierarchy.EmbedConfig);
+                    }
+                    else if (reportName.ToLower() == "mystery shopper  qar")
+                    {
+                        return View(m_OpMysteryShopperQAR.EmbedConfig);
+                    }
+                    //Note: Head Office All Report
+                    else if (reportName.ToLower() == "finance")
+                    {
+                        return View(m_FinanceReport.EmbedConfig);
+                    }
+                    else if (reportName.ToLower() == "marketing")
+                    {
+                        return View(m_MarketingReport.EmbedConfig);
+                    }
                     //Note: Head Office Finance Report View
-                    //Note: Head Office Finance All Report  
-                    else if (reportName.ToLower() == "daily corp store stats report")
+                    //Note: Head Office Finance All Report 
+                    else if (reportName.ToLower() == "hofinance") {
+                        var sName = Request.QueryString["sname"].ToString();
+                     if (sName == "fr1")
                     {
                         return View(m_HOFDCSSR.EmbedConfig);
                     }
-                    else if (reportName.ToLower() == "sales by date by media type")
+                    else if (sName == "fr2")
                     {
                         //embedResult = await m_HOFSBDBMT.EmbedReport(username, roles);
                         return View(m_HOFSBDBMT.EmbedConfig);
                     }
-                    else if (reportName.ToLower() == "summary scorecard finance weekly")
+                    else if (sName == "fr3")
                     {
                         //embedResult = await m_HOFSSFW.EmbedReport(username, roles);
                         return View(m_HOFSSFW.EmbedConfig);
                     }
-                    else if (reportName.ToLower() == "gift card sales")
+                    else if (sName == "fr4")
                     {
                         //embedResult = await m_HOFGCS.EmbedReport(username, roles);
                         return View(m_HOFGCS.EmbedConfig);
                     }
-                    else if (reportName.ToLower() == "summary scorecard finance month and year")
+                    else if (sName == "fr5")
                     {
                         //embedResult = await m_HOFSSFMY.EmbedReport(username, roles);
                         return View(m_HOFSSFMY.EmbedConfig);
                     }
-                    else if (reportName.ToLower() == "lfl summary scorecard finance year")
+                    else if (sName == "fr6")
                     {
                         //embedResult = await m_HOFLSSFY.EmbedReport(username, roles);
                         return View(m_HOFLSSFY.EmbedConfig);
                     }
-                    else if (reportName.ToLower() == "lfl summary scorecard finance")
+                    else if (sName == "fr7")
                     {
                         //embedResult = await m_HOFLSSF.EmbedReport(username, roles);
                         return View(m_HOFLSSF.EmbedConfig);
                     }
-                    else if (reportName.ToLower() == "brewery sales trend")
+                    else 
                     {
                         //embedResult = await m_HOFBST.EmbedReport(username, roles);
                         return View(m_HOFBST.EmbedConfig);
                     }
-                    //Note: Help Report View
-                    else if (reportName.ToLower() == "dashboard help")
+                }
+                //Note: Head Office Marketig Report View
+                else if (reportName.ToLower() == "homarketing")
+                {
+                    var sName = Request.QueryString["sname"].ToString();
+                    if (sName == "mr1")
+                    {
+                        return View(m_HOMAAUES.EmbedConfig);
+                    }
+                    else if (sName == "mr2")
+                    {
+                        return View(m_HOMBSR.EmbedConfig);
+                    }
+                    else if (sName == "mr3")
+                    {
+                        return View(m_HOMMAATV.EmbedConfig);
+                    }
+                    else if (sName == "mr4")
+                    {
+                        return View(m_HOMMR.EmbedConfig);
+                    }
+                    else if (sName == "mr5")
+                    {
+                        return View(m_HOMPSC.EmbedConfig);
+                    }
+                    else if (sName == "mr6")
+                    {
+                        return View(m_HOMSBTR.EmbedConfig);
+                    }
+                    else if (sName == "mr7")
+                    {
+                        return View(m_HOMTTMRBS.EmbedConfig);
+                    }
+                    else
+                    {
+                        return View(m_HOMBST.EmbedConfig);
+                    }
+                }
+                //Note: Help Report View
+                else if (reportName.ToLower() == "dashboard help")
                 {
                     return View(m_HelpReport.EmbedConfig);
                 }

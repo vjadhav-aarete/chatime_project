@@ -7,10 +7,11 @@
 <link href="~/Content/style/reset.css" rel="stylesheet" />
 <link rel="stylesheet" media="screen and (max-width: 1023px)" href="~/Content/style/mobile.css" />
 <link rel="stylesheet" media="screen and (min-width: 1024px)" href="~/Content/style/chatime.css" />
-<link id="loadCss" rel="stylesheet" href="" />
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://npmcdn.com/es6-promise@3.2.1"></script>
 <script src="~/scripts/powerbi.js"></script>
+
 
 <!--if (!string.IsNullOrEmpty(Model.ErrorMessage))
 {
@@ -76,10 +77,11 @@
     <div class="mobile-parent-container">
         <div class="mobile-landind">
             <div class="mobile-top-bar">
-                <div class="mobile-menu-icon"> <i class="icon-menu" style="font-size: 13px;"></i></div>
+                <div class="mobile-menu-icon"> <i class="icon-menu" style="font-size: 13px; display:none"></i></div>
                 <div class="mobile-chatime-logo"><img src="~/images/chatimeLogo3x.png" alt="chatime" title="chatime" /></div>
                 <div class="mobile-refresh-icon"><p class="sync"><i class="icon-refresh"></i></p></div>
-                <div class="mobile-user-icon"><p class="download-block"><i class="icon-reports"></i></p></div>
+                @*<div class="mobile-user-icon"><p class="download-block"><i class="icon-reports"></i></p></div>*@
+                <div class="m_logout"><i class="icon-signout"></i></div>
             </div>
 
             @*<div class="mobile_tagLine">the home of freshly brewed iced tea</div>*@
@@ -172,8 +174,8 @@
 
 
     }
-    // calculate width & height & assign to the iframe
-    var headerHeight = 65;
+    // calculate width & height 3 assign to the iframe
+    var headerHeight = 54;
     var sidebarWidth = $(".sidebar").width();
     var sidebarHeight = $(".sidebar").height();
     var winWidth = $(window).width();
@@ -186,11 +188,49 @@
     $('#report-container').css('left', 60 + 'px');
     $('.sidebar-container').css('height', $(window).height() - headerHeight + 'px');
 
+    
+    function GetURLParameter(sParam) {
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&');
+        for (var i = 0; i < sURLVariables.length; i++) {
+            var sParameterName = sURLVariables[0].split('=');
+            if (sParameterName[0] === sParam) {
+                var activeIdName = sParameterName[1].replace(/%20/g, " ");
+                console.log(activeIdName);
+                debugger;
+                // var activeId = "#" + activeIdName;
+                if (activeIdName === "Quick Stats" || activeIdName === "Quick Stats LFL") {
+                    $("#QuickStats i").css("opacity", "1");
+                }
+                else if (activeIdName === "Scorecard Summary" || activeIdName === "Aggregated View" || activeIdName === "Monthly Run Rate") {
+                    $("#Scorecard i").css("opacity", "1");
+                } else if (activeIdName === "Operational Insights" || activeIdName === "Daily Labour Analysis" || activeIdName === "Actual Projected Labour" || activeIdName === "Sales by Product Hierarchy" || activeIdName === "Mystery Shopper & QAR") {
+                    $("#Operations i").css("opacity", "1");
+                }
+                else if (activeIdName === "PL FY View" || activeIdName === "PL Head Office View" || activeIdName === "PL Multi Location View") {
+                    $("#Finance i").css("opacity", "1");
+                }
+                else if (activeIdName === "Finance" || activeIdName === "Marketing") {
+                    $("#HeadOffice i").css("opacity", "1");
+                }
+                else if (activeIdName === "Dashboard Help") {
+                    $("#Help i").css("opacity", "1");
+                }
+                else {
+                    $("#HeadOffice i").css("opacity", "1");
+                }
+            }
+        };
+    };
+ 
     $(document).ready(function () {
+        
+        //   GetURLParameter('name');
         if (localStorage.getItem("auth") === "" || localStorage.getItem("auth") === null || localStorage.getItem("auth") === undefined) {
             window.location.href = baseURL + "Home/Index";
             localStorage.clear();
         }
+         
         loadReport();
         //IDLE TIME CHECK OUT CODE
     var IDLE_TIMEOUT = 1800; //seconds
@@ -225,12 +265,17 @@
         _idleSecondsCounter++;
         // console.log((IDLE_TIMEOUT - _idleSecondsCounter) + "")
         if (_idleSecondsCounter >= IDLE_TIMEOUT) {
+             window.clearInterval(_idleSecondsTimer);
+                localStorage.clear();
              $(".container, .topMenu, .head-block-list, .submenu-new li, .download-block, .sync").click(function () {
                 window.clearInterval(_idleSecondsTimer);
-                //alert("Time expired!");
                 localStorage.clear();
                 window.location.href = baseURL + "Home/Index";
-                console.log(localStorage.getItem("username"));
+             });
+            $('body').click(function () {
+                window.clearInterval(_idleSecondsTimer);
+                localStorage.clear();
+                window.location.href = baseURL + "Home/Index";
             });
             
         }
@@ -238,7 +283,7 @@
 
 
         $("#logoutBtn").click(function () {
-            window.location.href = baseURL;
+            window.location.href = baseURL + "Home/Index";
             sessionStorage.clear();
         });
         // code for refreshing iframe
@@ -251,37 +296,10 @@
         //debugger;
         window.location.href = baseURL + "Home/Landing";
     }
-   
-//    function GetURLParameter(sParam) {        
-//    var sPageURL = window.location.search.substring(1);
-//    var sURLVariables = sPageURL.split('&');
-//    for (var i = 0; i < sURLVariables.length; i++){
-//    var sParameterName = sURLVariables[i].split('=');
-//    if (sParameterName[0] === sParam) {
-//    var activeIdName = sParameterName[1].replace(/%20/g, " ");
-//    console.log(activeIdName);
-//    var activeId = "#" + activeIdName;
-//    if (activeIdName === "Quick Stats" || activeIdName === "Quick Stats Lfl") {
-//        $("#QuickStats i").css("opacity", "1");
-//    }
-//    else if (activeIdName === "Scorecard Summary" || activeIdName === "Aggregated View" || activeIdName === "Monthly Run Rate") {
-//        $("#Scorecard i").css("opacity", "1");
-//    } else if (activeIdName === "Operational Insights" || activeIdName === "Daily Labour Analysis" || activeIdName === "Actual Projected Labour" || activeIdName === "Sales by Product Hierarchy" || activeIdName === "Mystery Shopper & QAR") {
-//        $("#Operations i").css("opacity", "1");
-//    }
-//    else if (activeIdName === "PL FY View" || activeIdName === "PL Head Office View" || activeIdName === "PL Multi Location View") {
-//        $("#Finance i").css("opacity", "1");
-//    }
-//    else if (activeIdName === "Finance" || activeIdName === "Marketing") {
-//        $("#HeadOffice i").css("opacity", "1");
-//    }
-//    else if (activeIdName === "Help" ) {
-//         $("#Help i").css("opacity", "1");
-//    }
-//};
-//$(window).on('load', function () {
-//    GetURLParameter('name');
-//});
+
+    $(window).on('load', function () {
+        GetURLParameter('name');
+    });
 
 
 </script>

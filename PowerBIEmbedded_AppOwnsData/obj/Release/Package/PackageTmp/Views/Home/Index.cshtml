@@ -28,8 +28,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-   
+ @*<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">*@
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <title>Chatime Page Login</title>
     <link href="~/Content/style/reset.css" rel="stylesheet" />
     <link rel="stylesheet" media="screen and (max-width: 1023px)" href="~/Content/style/mobile.css" />
@@ -46,28 +46,30 @@
                 <img src="~/images/chatimeLogo3x.png" />
             </div>
             <div class="wc-dashboard">Welcome to dashboard</div>
-            <div class="login-inputs" style="clear:both">
-                <label class="chatime-label">
-                    Username <span class="asteric">*</span>
-                </label>
-                <input class="chatime-input"
-                       type="text"
-                       id="username"
-                       placeholder="Type your username here" />
-                <p style="clear:both"></p>
-                <label class="chatime-label">
-                    Password <span class="asteric">*</span>
-                </label>
-                <input class="chatime-input"
-                       type="password"
-                       id="password"
-                       placeholder="******" />
-                <p style="clear:both"></p>
-                <p class="error-message"></p>
-                <div class="button-cont">
-                    <button class="chatime-login" id="login">Login</button>
+           
+                <div class="login-inputs" style="clear:both">
+                    <label class="chatime-label">
+                        Username <span class="asteric">*</span>
+                    </label>
+                    <input class="chatime-input"
+                           type="text"
+                           id="username"
+                           placeholder="Type your username here" />
+                    <p style="clear:both"></p>
+                    <label class="chatime-label">
+                        Password <span class="asteric">*</span>
+                    </label>
+                    <input class="chatime-input"
+                           type="password"
+                           id="password"
+                           placeholder="******" />
+                    <p style="clear:both"></p>
+                    <p class="error-message"></p>
+                    <div class="button-cont">
+                        <button class="chatime-login" id="login">Login</button>
+                    </div>
                 </div>
-            </div>
+             
         </div>
         <div class="chatimeLink"><a href="https://chatime.com.au/" target="_blank" alt="www.chatime.com.au" title="www.chatime.com.au">www.chatime.com.au</a></div>
 
@@ -96,13 +98,11 @@
                         console.log(JSON.parse(response));
                         var data = JSON.parse(response);
                         if (data.StatusCode === "200") {
-                            sessionStorage.setItem("username", data.UserName);
-                            sessionStorage.setItem("storename", data.StoreName);                          
+                            localStorage.setItem("username", data.UserName);
+                            localStorage.setItem("storename", data.StoreName);                          
                             localStorage.setItem("auth", data.authToken);
                             localStorage.setItem("userRole", data.UserRole);
-                            console.log(localStorage.getItem("auth"));
-                            console.log(sessionStorage.getItem("username"));
-                            console.log(sessionStorage.getItem("storename"));
+                      
                             window.location.href = baseURL+"Home/Landing";
                         }
                         else {

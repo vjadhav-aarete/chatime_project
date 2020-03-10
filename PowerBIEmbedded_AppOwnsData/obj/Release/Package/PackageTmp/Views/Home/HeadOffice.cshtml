@@ -49,19 +49,16 @@
                 <p class="headerBlock">Head Office - Finance</p>
                 <!--<div class="BrewerySalesTrend">Brewery Sales Trend</div>-->
                 <div class="subLinks">
-                    <p><a href="">Daily Corp Store Stats Report</a></p>
-                    <p><a href="">Sales By Date By Media Type</a></p>
-                    <p><a href="">Summary Scorecard - Finance - Weekly</a></p>
-                    <p><a href="">Gift Card Sales</a></p>
-                    <p><a href="">Summary Scorecard Finance Month and year</a></p>
-                    <p><a href="">LFL Summary Scorecard Finance year</a></p>
-                    <p><a href="">LFL Summary Scorecard Finance</a></p>
-                    <p><a href="">Brewery Sales Trend</a></p>
+                    <p><a href="" id="fr1">Daily Corp Store Stats Report</a></p>
+                    <p><a href="" id="fr2">Sales By Date By Media Type</a></p>
+                    <p><a href="" id="fr3">Summary Scorecard - Finance - Weekly</a></p>
+                    <p><a href="" id="fr4">Gift Card Sales</a></p>
+                    <p><a href="" id="fr5">Summary Scorecard Finance Month and year</a></p>
+                    <p><a href="" id="fr6">LFL Summary Scorecard Finance year</a></p>
+                    <p><a href="" id="fr7">LFL Weekly Scorecard Summary Finance</a></p>
+                    <p><a href="" id="fr8">Brewery Sales Trend</a></p>
                 </div>
             </div>
-
-
-
         </div>
 
 
@@ -95,11 +92,54 @@
             </div>*@
         </div>
     </div>
-    <script type="text/javascript">$(document).ready(function () {
+    <script type="text/javascript">
+    var user = localStorage.getItem("username");
+var auth = localStorage.getItem("auth");
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+
+
+var device = "";
+if (isMobile) {
+    device = "mobile"
+}
+else {
+    device = "web"
+}
+
+var date = new Date();
+var sqlDate = date.toISOString().slice(0, 19).replace('T', ' ');
+console.log(date);
+var year = date.getFullYear().toString();
+
+var month = date.getMonth() + 1;
+month = month.toString();
+    
+    
+    function GetURLParameter(sParam) {
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&');
+        for (var i = 0; i < sURLVariables.length; i++) {
+            var sParameterName = sURLVariables[0].split('=');
+            if (sParameterName[0] === sParam) {
+                var activeIdName = sParameterName[1].replace(/%20/g, " ");
+                console.log(activeIdName);
+                if (activeIdName === "Finance" || activeIdName === "Marketing") {
+                    $("#HeadOffice i").css("opacity", "1");
+                }
+            }
+        };
+    };
+
+    $(window).on('load', function () {
+    GetURLParameter('name');
+    });
+
+        $(document).ready(function () {
             // debugger;
             console.log(localStorage.getItem("auth"));
-            if (localStorage.getItem("auth") === "" || localStorage.getItem("auth") === null) {
-                window.location.href = "http://localhost:42734/Home/Index";
+            if (localStorage.getItem("auth") === "" || localStorage.getItem("auth") === null || localStorage.getItem("auth") === undefined) {
+                window.location.href = baseURL + "Home/Index";
             }
             //check ideal time of user
             var IDLE_TIMEOUT = 1800; //seconds
@@ -134,20 +174,62 @@
                 _idleSecondsCounter++;
                 // console.log((IDLE_TIMEOUT - _idleSecondsCounter) + "")
                 if (_idleSecondsCounter >= IDLE_TIMEOUT) {
-                    $(".container, .topMenu, .head-block-list, .submenu-new li, .download-block, .sync").click(function () {
+                     window.clearInterval(_idleSecondsTimer);
+                        localStorage.clear();
+                     $(".container, .topMenu, .head-block-list, .submenu-new li, .download-block, .sync").click(function () {
                         window.clearInterval(_idleSecondsTimer);
-                        //alert("Time expired!");
                         localStorage.clear();
                         window.location.href = baseURL + "Home/Index";
-                        console.log(localStorage.getItem("auth"));
+                     });
+                    $('body').click(function () {
+                        window.clearInterval(_idleSecondsTimer);
+                        localStorage.clear();
+                        window.location.href = baseURL + "Home/Index";
                     });
+            
                 }
             }
-            $(".subLinks a").click(function (){
+
+            $(".subLinks a, .sublinks p").click(function () {
+                //debugger;
                 var data = $(this).html();
                 console.log(data)
-                $(this).attr("href", baseURL + "Home/EmbedReport?" +  "name=" + data+"&d=d")
+                //debugger;
+                var rId = $(this).attr("id")
+                callLogAPI(data);
+                $(this).attr("href", baseURL + "Home/EmbedReport?" + "name=HOFinance" + "&sname=" + rId + "&d=d")
             });
+
+
+
+
+   function callLogAPI(reportName) {
+                //debugger;
+    var data = {
+        "UserName": user,
+        "Year": year,
+        "ProjectName": "Chatime",
+        "Month": month,
+        "Date": sqlDate,
+        "createdTimeStamp": sqlDate,
+        "UpdatedTimeStamp": sqlDate,
+        "ReportName": reportName,
+        "DeviceType": device,
+        "Session": auth
+    };
+    console.log(data, "data");
+    $.ajax({
+        url: RESTURL + 'api/userlogin/logg',
+        type: 'post',
+        data: data,
+        dataType: 'json',
+        async: true,
+        success: function (response) {
+            console.log(JSON.parse(response));
+        }
+    })
+}
+
 
 
 });

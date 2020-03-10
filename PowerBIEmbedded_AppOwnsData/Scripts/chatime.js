@@ -123,15 +123,22 @@ var m_data = [
         submenu: ["Quick Stats", "Quick Stats LFL"]
     },
     {
-        blockhead: "Scorecard",
-        blockid: "Scorecard",
+        blockhead: "Quick Stats LFL",
+        blockid: "QuickStatsLFL",
+        blockimage: "./assets/images/Quick-Stats-icon.svg",
+        fontIconClass: "icon-graph",
+        submenu: ["Quick Stats", "Quick Stats LFL"]
+    },
+    {
+        blockhead: "Monthly Run Rate",
+        blockid: "Monthly Run Rate",
         blockimage: "./assets/images/scoreboard-icon.svg",
         fontIconClass: "icon-download",
         submenu: ["Scorecard Summary"]
     },
     {
-        blockhead: "Operations",
-        blockid: "Operations",
+        blockhead: "Hourly Sales By Store",
+        blockid: "Hourly Sales By Store",
         blockimage: "./assets/images/Operations-Icon.svg",
         fontIconClass: "icon-settings",
         submenu: [
@@ -178,7 +185,7 @@ function sideBarNavigation() {
     html += '</a>';
     html += '</li>';
     for (var i = 0; i < testData.length; i++) {
-        html += '<li class="head-block-list">';
+        html += '<li class="head-block-list" id="' + testData[i].blockid + '">';
         html += '<span class="option-head"> ' + testData[i].blockhead + '</span>';
         html += '<i class="' + testData[i].fontIconClass + '"></i>';
         if (testData[i].submenu) {
@@ -220,7 +227,7 @@ function sideBarNavigation() {
         m_option += '<div class="m_option_parent" id="' + testData[i].blockid + '"  onclick="navigateToReportLoadingPage(this)">';
         m_option += '<span><i class="' + testData[i].fontIconClass + '"></i></span>';
         m_option += '<span class="m_option_title">' + testData[i].blockhead + '</span>';
-        m_option += '<span class="m_mobile_alert"><i class="icon-alert"></i></span>';
+        //m_option += '<span class="m_mobile_alert"><i class="icon-alert"></i></span>';
         m_option += '</div>';
     }
 
@@ -231,7 +238,7 @@ function sideBarNavigation() {
         if (testData[i].submenu) {
             m_overlay_option += '   <ul class="m_overlay_submenu">'
             for (var j = 0; j < testData[i].submenu.length; j++) {
-                m_overlay_option += ' <li>' + testData[i].submenu[j] + '</li>';
+                m_overlay_option += ' <li id="' + testData[i].submenu[j] + '">' + testData[i].submenu[j] + '</li>';
             }
             m_overlay_option += '   </ul>'
         }
@@ -285,46 +292,111 @@ switch (new Date().getMonth()) {
         break;
 }
 $(".todays-date").append(date + " " + month);
+var user = localStorage.getItem("username");
+var auth = localStorage.getItem("auth");
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+
+
+var device = "";
+if (isMobile) {
+    device = "mobile"
+}
+else {
+    device = "web"
+}
+
+var date = new Date();
+var sqlDate = date.toISOString().slice(0, 19).replace('T', ' ');
+console.log(date);
+var year = date.getFullYear().toString();
+
+var month = date.getMonth() + 1;
+month = month.toString();
 
 function navigateToReportLoadingPage(element) {
+
+    debugger;
+    var report_name = $(this).attr('id');
+   //console.log(report_name);
     var id = $(element).attr("id");
-    // alert(id);
-    // window.location.href = "http://localhost:42734/Home/Report   http://172.16.17.66:75"
+  //  console.log(id);
+   
     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     if (isMobile) {
+       // debugger;
         if (id === 'QuickStats') {
+            callLogAPI('Quick Stats');
             window.location.href = baseURL + "/Home/EmbedReport?name=quick%20stats&d=m";
         }
-        else if (id === "Scorecard") {
-            window.location.href = baseURL + "Home/EmbedReport?name=scorecard%20sumary&d=m";
+        else if (id === 'QuickStatsLFL') {
+            callLogAPI('Quick Stats LFL');
+            window.location.href = baseURL + "/Home/EmbedReport?name=quick%20stats%20lfl&d=m";
+        }
+        else if (id === "Monthly Run Rate") {
+            callLogAPI('Monthly Run Rate');
+            window.location.href = baseURL + "Home/EmbedReport?name=scorecard%20summary&d=m";
         }
         else {
-            window.location.href = baseURL + "Home/EmbedReport?name=scorecard%20sumary&d=m";
+            callLogAPI('Hourly Sales By Store');
+            window.location.href = baseURL + "Home/EmbedReport?name=operations&d=m";
         }
     }
     else {
         if (id === 'QuickStats') {
-            window.location.href = baseURL + "/Home/EmbedReport?name=quick%20stats&d=d";
+            callLogAPI('Quick Stats');
+            window.location.href = baseURL + "/Home/EmbedReport?name=Quick%20Stats&d=d";
         }
         else if (id === "Scorecard") {
-            window.location.href = baseURL + "Home/EmbedReport?name=scorecard%20summary&d=d";
+            callLogAPI('Scorecard Summary');
+            window.location.href = baseURL + "Home/EmbedReport?name=Scorecard%20Summary&d=d";
         }
         else if (id === "Operations") {
-            window.location.href = baseURL + "Home/EmbedReport?name=operational%20insights&d=d";
+            callLogAPI('Operational Insights');
+            window.location.href = baseURL + "Home/EmbedReport?name=Operational%20Insights&d=d";
         }
         else if (id === "Finance") {
-            window.location.href = baseURL + "Home/EmbedReport?name=pl%20fy%20view&d=d";
+            callLogAPI('PL FY View');
+            window.location.href = baseURL + "Home/EmbedReport?name=PL%20FY%20View&d=d";
         }
         else if (id === "HeadOffice") {
+            callLogAPI('Finance');
             //EmbedReport?name=marketing&d=d
-            window.location.href = baseURL + "Home/HeadOffice";
+            window.location.href = baseURL + "Home/HeadOffice?name=Finance";
         }
         else if (id === "Help") {
-            window.location.href = baseURL + "Home/EmbedReport?name=dashboard%20help&d=d";
+            callLogAPI('Dashboard Help');
+            window.location.href = baseURL + "Home/EmbedReport?name=Dashboard%20Help&d=d";
         }
         else {
             window.location.href = baseURL;
         }
     }
-    
+   
+}
+
+function callLogAPI(reportName) {
+    var data = {
+        "UserName": user,
+        "Year": year,
+        "ProjectName": "Chatime",
+        "Month": month,
+        "Date": sqlDate,
+        "createdTimeStamp": sqlDate,
+        "UpdatedTimeStamp": sqlDate,
+        "ReportName": reportName,
+        "DeviceType": device,
+        "Session": auth
+    };
+    console.log(data, "data");
+    $.ajax({
+        url: RESTURL + 'api/userlogin/logg',
+        type: 'post',
+        data: data,
+        dataType: 'json',
+        async: true,
+        success: function (response) {
+            console.log(JSON.parse(response));
+        }
+    })
 }
