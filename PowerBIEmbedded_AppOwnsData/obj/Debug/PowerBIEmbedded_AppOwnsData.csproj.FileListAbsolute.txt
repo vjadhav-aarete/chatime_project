@@ -1091,3 +1091,385 @@ C:\Chatime_Main_App\Chatime_App\PowerBIEmbedded_AppOwnsData\obj\Debug\PowerBIEmb
 C:\Chatime_Main_App\Chatime_App\PowerBIEmbedded_AppOwnsData\obj\Debug\PowerBIEmbedded_AppOwnsData.csproj.CopyComplete
 C:\Chatime_Main_App\Chatime_App\PowerBIEmbedded_AppOwnsData\obj\Debug\PowerBIEmbedded_AppOwnsData.dll
 C:\Chatime_Main_App\Chatime_App\PowerBIEmbedded_AppOwnsData\obj\Debug\PowerBIEmbedded_AppOwnsData.pdb
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\PowerBIEmbedded_AppOwnsData.dll.config
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\PowerBIEmbedded_AppOwnsData.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\PowerBIEmbedded_AppOwnsData.pdb
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\csc.exe
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\csc.exe.config
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\csc.rsp
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\csi.exe
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\csi.exe.config
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\csi.rsp
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.Managed.Core.targets
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.AppContext.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Collections.Immutable.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Console.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Globalization.Calendars.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.IO.Compression.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.IO.FileSystem.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Net.Http.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Net.Sockets.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Reflection.Metadata.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.ValueTuple.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Xml.XmlDocument.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Xml.XPath.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\vbc.exe
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\vbc.exe.config
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\vbc.rsp
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\VBCSCompiler.exe
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\VBCSCompiler.exe.config
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.Win32.Primitives.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\netstandard.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.AppContext.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Collections.Concurrent.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Collections.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Collections.NonGeneric.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Collections.Specialized.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.ComponentModel.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.ComponentModel.EventBasedAsync.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.ComponentModel.Primitives.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.ComponentModel.TypeConverter.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Console.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Data.Common.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.Contracts.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.Debug.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.FileVersionInfo.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.Process.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.StackTrace.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.TextWriterTraceListener.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.Tools.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.TraceSource.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.Tracing.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Drawing.Primitives.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Dynamic.Runtime.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Globalization.Calendars.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Globalization.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Globalization.Extensions.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.IO.Compression.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.IO.Compression.ZipFile.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.IO.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.IO.FileSystem.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.IO.FileSystem.DriveInfo.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.IO.FileSystem.Primitives.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.IO.FileSystem.Watcher.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.IO.IsolatedStorage.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.IO.MemoryMappedFiles.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.IO.Pipes.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.IO.UnmanagedMemoryStream.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Linq.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Linq.Expressions.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Linq.Parallel.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Linq.Queryable.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Net.Http.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Net.NameResolution.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Net.NetworkInformation.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Net.Ping.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Net.Primitives.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Net.Requests.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Net.Security.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Net.Sockets.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Net.WebHeaderCollection.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Net.WebSockets.Client.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Net.WebSockets.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.ObjectModel.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Reflection.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Reflection.Extensions.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Reflection.Primitives.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Resources.Reader.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Resources.ResourceManager.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Resources.Writer.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.CompilerServices.VisualC.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Extensions.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Handles.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.InteropServices.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Numerics.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Serialization.Formatters.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Serialization.Json.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Serialization.Primitives.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Serialization.Xml.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Security.Claims.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Security.Cryptography.Algorithms.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Security.Cryptography.Csp.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Security.Cryptography.Encoding.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Security.Cryptography.Primitives.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Security.Cryptography.X509Certificates.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Security.Principal.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Security.SecureString.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Text.Encoding.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Text.Encoding.Extensions.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Text.RegularExpressions.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Threading.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Threading.Overlapped.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Threading.Tasks.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Threading.Tasks.Parallel.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Threading.Thread.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Threading.ThreadPool.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Threading.Timer.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.ValueTuple.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Xml.ReaderWriter.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Xml.XDocument.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Xml.XmlDocument.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Xml.XmlSerializer.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Xml.XPath.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Xml.XPath.XDocument.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Antlr3.Runtime.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\EntityFramework.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\EntityFramework.SqlServer.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.AspNet.Identity.Core.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.Owin.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.PowerBI.Api.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.Rest.ClientRuntime.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.Web.Infrastructure.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Newtonsoft.Json.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Owin.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.Helpers.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.Mvc.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.Optimization.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.Razor.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.WebPages.Deployment.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.WebPages.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.WebPages.Razor.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\WebGrease.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Antlr3.Runtime.pdb
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\EntityFramework.xml
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\EntityFramework.SqlServer.xml
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.AspNet.Identity.Core.xml
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.pdb
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.Owin.xml
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Newtonsoft.Json.xml
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.Helpers.xml
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.Mvc.xml
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.Razor.xml
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.WebPages.xml
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.WebPages.Deployment.xml
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.WebPages.Razor.xml
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.Optimization.xml
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\obj\Debug\PowerBIEmbedded_AppOwnsData.csprojAssemblyReference.cache
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\obj\Debug\PowerBIEmbedded_AppOwnsData.csproj.CoreCompileInputs.cache
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\obj\Debug\PowerBIEmbedded_AppOwnsData.csproj.CopyComplete
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\obj\Debug\PowerBIEmbedded_AppOwnsData.dll
+E:\power bi\Real Chatime\Application code\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\obj\Debug\PowerBIEmbedded_AppOwnsData.pdb
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\PowerBIEmbedded_AppOwnsData.dll.config
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\PowerBIEmbedded_AppOwnsData.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\PowerBIEmbedded_AppOwnsData.pdb
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\csc.exe
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\csc.exe.config
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\csc.rsp
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\csi.exe
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\csi.exe.config
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\csi.rsp
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.Managed.Core.targets
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.AppContext.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Collections.Immutable.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Console.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Globalization.Calendars.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.IO.Compression.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.IO.FileSystem.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Net.Http.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Net.Sockets.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Reflection.Metadata.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.ValueTuple.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Xml.XmlDocument.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Xml.XPath.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\vbc.exe
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\vbc.exe.config
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\vbc.rsp
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\VBCSCompiler.exe
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\roslyn\VBCSCompiler.exe.config
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.Win32.Primitives.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\netstandard.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.AppContext.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Collections.Concurrent.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Collections.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Collections.NonGeneric.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Collections.Specialized.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.ComponentModel.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.ComponentModel.EventBasedAsync.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.ComponentModel.Primitives.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.ComponentModel.TypeConverter.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Console.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Data.Common.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.Contracts.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.Debug.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.FileVersionInfo.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.Process.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.StackTrace.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.TextWriterTraceListener.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.Tools.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.TraceSource.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.Tracing.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Drawing.Primitives.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Dynamic.Runtime.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Globalization.Calendars.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Globalization.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Globalization.Extensions.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.IO.Compression.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.IO.Compression.ZipFile.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.IO.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.IO.FileSystem.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.IO.FileSystem.DriveInfo.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.IO.FileSystem.Primitives.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.IO.FileSystem.Watcher.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.IO.IsolatedStorage.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.IO.MemoryMappedFiles.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.IO.Pipes.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.IO.UnmanagedMemoryStream.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Linq.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Linq.Expressions.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Linq.Parallel.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Linq.Queryable.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Net.Http.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Net.NameResolution.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Net.NetworkInformation.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Net.Ping.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Net.Primitives.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Net.Requests.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Net.Security.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Net.Sockets.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Net.WebHeaderCollection.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Net.WebSockets.Client.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Net.WebSockets.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.ObjectModel.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Reflection.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Reflection.Extensions.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Reflection.Primitives.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Resources.Reader.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Resources.ResourceManager.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Resources.Writer.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.CompilerServices.VisualC.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Extensions.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Handles.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.InteropServices.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Numerics.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Serialization.Formatters.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Serialization.Json.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Serialization.Primitives.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Serialization.Xml.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Security.Claims.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Security.Cryptography.Algorithms.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Security.Cryptography.Csp.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Security.Cryptography.Encoding.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Security.Cryptography.Primitives.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Security.Cryptography.X509Certificates.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Security.Principal.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Security.SecureString.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Text.Encoding.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Text.Encoding.Extensions.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Text.RegularExpressions.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Threading.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Threading.Overlapped.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Threading.Tasks.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Threading.Tasks.Parallel.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Threading.Thread.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Threading.ThreadPool.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Threading.Timer.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.ValueTuple.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Xml.ReaderWriter.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Xml.XDocument.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Xml.XmlDocument.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Xml.XmlSerializer.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Xml.XPath.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Xml.XPath.XDocument.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Antlr3.Runtime.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\EntityFramework.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\EntityFramework.SqlServer.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.AspNet.Identity.Core.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.Owin.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.PowerBI.Api.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.Rest.ClientRuntime.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.Web.Infrastructure.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Newtonsoft.Json.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Owin.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.Helpers.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.Mvc.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.Optimization.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.Razor.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.WebPages.Deployment.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.WebPages.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.WebPages.Razor.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\WebGrease.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Antlr3.Runtime.pdb
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\EntityFramework.xml
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\EntityFramework.SqlServer.xml
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.AspNet.Identity.Core.xml
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.pdb
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Microsoft.Owin.xml
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\Newtonsoft.Json.xml
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.Helpers.xml
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.Mvc.xml
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.Razor.xml
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.WebPages.xml
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.WebPages.Deployment.xml
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.WebPages.Razor.xml
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\bin\System.Web.Optimization.xml
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\obj\Debug\PowerBIEmbedded_AppOwnsData.csprojAssemblyReference.cache
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\obj\Debug\PowerBIEmbedded_AppOwnsData.csproj.CoreCompileInputs.cache
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\obj\Debug\PowerBIEmbedded_AppOwnsData.csproj.CopyComplete
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\obj\Debug\PowerBIEmbedded_AppOwnsData.dll
+E:\developer\Chatime_Project\Chatime_App - Copy\PowerBIEmbedded_AppOwnsData\obj\Debug\PowerBIEmbedded_AppOwnsData.pdb

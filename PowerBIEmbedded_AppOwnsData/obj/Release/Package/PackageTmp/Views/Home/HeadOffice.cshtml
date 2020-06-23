@@ -25,7 +25,7 @@
                     <p class="sync">
                         <i class="icon-refresh"></i>
                     </p>
-                    <p class="download-block">
+                    <p class="download-block" style="display: none !important;">
                         <i class="icon-reports"></i>
                     </p>
                 </div>
@@ -49,198 +49,202 @@
                 <p class="headerBlock">Head Office - Finance</p>
                 <!--<div class="BrewerySalesTrend">Brewery Sales Trend</div>-->
                 <div class="subLinks">
+                    <p><a href="" id="fr8">Brewery Sales Trend</a></p>
                     <p><a href="" id="fr1">Daily Corp Store Stats Report</a></p>
-                    <p><a href="" id="fr2">Sales By Date By Media Type</a></p>
-                    <p><a href="" id="fr3">Summary Scorecard - Finance - Weekly</a></p>
                     <p><a href="" id="fr4">Gift Card Sales</a></p>
-                    <p><a href="" id="fr5">Summary Scorecard Finance Month and year</a></p>
                     <p><a href="" id="fr6">LFL Summary Scorecard Finance year</a></p>
                     <p><a href="" id="fr7">LFL Weekly Scorecard Summary Finance</a></p>
-                    <p><a href="" id="fr8">Brewery Sales Trend</a></p>
+                    <p><a href="" id="fr9">Redcat Sales (Direct)</a></p>
+                    <p><a href="" id="fr2">Sales By Date By Media Type</a></p>
+                    <!--<p><a href="" id="fr10">Sales By Store</a></p>-->
+                    <p><a href="" id="fr3">Summary Scorecard - Finance - Weekly</a></p>
+                    <p><a href="" id="fr5">Summary Scorecard Finance Month and year</a></p>
+
+
+                    </div>
                 </div>
             </div>
-        </div>
 
 
 
-        <div class="mobile-parent-container">
-            <div class="mobile-landind">
-                <div class="mobile-top-bar">
-                    <div class="mobile-menu-icon"> <i class="icon-menu" style="font-size: 13px;"></i></div>
-                    <div class="mobile-chatime-logo"><img src="~/images/chatimeLogo3x.png" alt="chatime" title="chatime" /></div>
-                    <div class="mobile-refresh-icon"><p class="sync"><i class="icon-refresh"></i></p></div>
-                    <div class="mobile-user-icon"><p class="download-block"><i class="icon-reports"></i></p></div>
+            <div class="mobile-parent-container">
+                <div class="mobile-landind">
+                    <div class="mobile-top-bar">
+                        <div class="mobile-menu-icon"> <i class="icon-menu" style="font-size: 13px;"></i></div>
+                        <div class="mobile-chatime-logo"><img src="~/images/Chatime_Logo@1.5x.svg" alt="chatime" title="chatime" /></div>
+                        <div class="mobile-refresh-icon"><p class="sync"><i class="icon-refresh"></i></p></div>
+                        <div class="mobile-user-icon"><p class="download-block"><i class="icon-reports"></i></p></div>
+                    </div>
+
+
+
+                    @*<div class="mobile_tagLine">the home of freshly brewed iced tea</div>*@
+
+
+
+                    @*<div class="mobile-landing-options"></div>*@
+                    <div class="m_menubar_overlay">
+                        <div class="append-options"></div>
+                        <div class="m_logout">Logout</div>
+                        <div class="close-overlay"><img src="~/images/mobile-images/Close-Button.svg" /></div>
+                    </div>
                 </div>
-
-
-
-                @*<div class="mobile_tagLine">the home of freshly brewed iced tea</div>*@
-
-
-
-                @*<div class="mobile-landing-options"></div>*@
-                <div class="m_menubar_overlay">
-                    <div class="append-options"></div>
-                    <div class="m_logout">Logout</div>
-                    <div class="close-overlay"><img src="~/images/mobile-images/Close-Button.svg" /></div>
-                </div>
+                @*<div class="orientation">
+                    <p><img src="~/images/mobile-images/Device-Rotate-Icon.svg" alt="rotate device" /></p>
+                    <p>We do not support landscape mode</p>
+                    <p>Please rotate your device and browse in portrait mode </p>
+                </div>*@
             </div>
-            @*<div class="orientation">
-                <p><img src="~/images/mobile-images/Device-Rotate-Icon.svg" alt="rotate device" /></p>
-                <p>We do not support landscape mode</p>
-                <p>Please rotate your device and browse in portrait mode </p>
-            </div>*@
         </div>
-    </div>
-    <script type="text/javascript">
-    var user = localStorage.getItem("username");
-var auth = localStorage.getItem("auth");
-var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        <script type="text/javascript">
+        var user = localStorage.getItem("username");
+    var auth = localStorage.getItem("auth");
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
 
 
-var device = "";
-if (isMobile) {
-    device = "mobile"
-}
-else {
-    device = "web"
-}
+    var device = "";
+    if (isMobile) {
+        device = "mobile"
+    }
+    else {
+        device = "web"
+    }
 
-var date = new Date();
-var sqlDate = date.toISOString().slice(0, 19).replace('T', ' ');
-console.log(date);
-var year = date.getFullYear().toString();
+    var date = new Date();
+    var sqlDate = date.toISOString().slice(0, 19).replace('T', ' ');
+    console.log(date);
+    var year = date.getFullYear().toString();
 
-var month = date.getMonth() + 1;
-month = month.toString();
-    
-    
-    function GetURLParameter(sParam) {
-        var sPageURL = window.location.search.substring(1);
-        var sURLVariables = sPageURL.split('&');
-        for (var i = 0; i < sURLVariables.length; i++) {
-            var sParameterName = sURLVariables[0].split('=');
-            if (sParameterName[0] === sParam) {
-                var activeIdName = sParameterName[1].replace(/%20/g, " ");
-                console.log(activeIdName);
-                if (activeIdName === "Finance" || activeIdName === "Marketing") {
-                    $("#HeadOffice i").css("opacity", "1");
+    var month = date.getMonth() + 1;
+    month = month.toString();
+
+
+        function GetURLParameter(sParam) {
+            var sPageURL = window.location.search.substring(1);
+            var sURLVariables = sPageURL.split('&');
+            for (var i = 0; i < sURLVariables.length; i++) {
+                var sParameterName = sURLVariables[0].split('=');
+                if (sParameterName[0] === sParam) {
+                    var activeIdName = sParameterName[1].replace(/%20/g, " ");
+                    console.log(activeIdName);
+                    if (activeIdName === "Finance" || activeIdName === "Marketing") {
+                        $("#HeadOffice i").css("opacity", "1");
+                    }
                 }
-            }
+            };
         };
-    };
 
-    $(window).on('load', function () {
-    GetURLParameter('name');
+        $(window).on('load', function () {
+        GetURLParameter('name');
+        });
+
+            $(document).ready(function () {
+                // debugger;
+                console.log(localStorage.getItem("auth"));
+                if (localStorage.getItem("auth") === "" || localStorage.getItem("auth") === null || localStorage.getItem("auth") === undefined) {
+                    window.location.href = baseURL + "Home/Index";
+                }
+                //check ideal time of user
+                var IDLE_TIMEOUT = 1800; //seconds
+                var _idleSecondsTimer = null;
+                var _idleSecondsCounter = 0;
+
+
+
+                document.onclick = function () {
+                    _idleSecondsCounter = 0;
+                };
+
+
+
+                document.onmousemove = function () {
+                    _idleSecondsCounter = 0;
+                };
+
+
+
+                document.onkeypress = function () {
+                    _idleSecondsCounter = 0;
+                };
+
+
+
+                _idleSecondsTimer = window.setInterval(CheckIdleTime, 1000);
+
+
+
+                function CheckIdleTime() {
+                    _idleSecondsCounter++;
+                    // console.log((IDLE_TIMEOUT - _idleSecondsCounter) + "")
+                    if (_idleSecondsCounter >= IDLE_TIMEOUT) {
+                         window.clearInterval(_idleSecondsTimer);
+                            localStorage.clear();
+                         $(".container, .topMenu, .head-block-list, .submenu-new li, .download-block, .sync").click(function () {
+                            window.clearInterval(_idleSecondsTimer);
+                            localStorage.clear();
+                            window.location.href = baseURL + "Home/Index";
+                         });
+                        $('body').click(function () {
+                            window.clearInterval(_idleSecondsTimer);
+                            localStorage.clear();
+                            window.location.href = baseURL + "Home/Index";
+                        });
+
+                    }
+                }
+
+                $(".subLinks a, .sublinks p").click(function () {
+                    //debugger;
+                    var data = $(this).html();
+                    console.log(data)
+                    //debugger;
+                    var rId = $(this).attr("id")
+                    callLogAPI(data);
+                    $(this).attr("href", baseURL + "Home/EmbedReport?" + "name=HOFinance" + "&sname=" + rId + "&d=d")
+                });
+
+
+
+
+       function callLogAPI(reportName) {
+                    //debugger;
+        var data = {
+            "UserName": user,
+            "Year": year,
+            "ProjectName": "Chatime",
+            "Month": month,
+            "Date": sqlDate,
+            "createdTimeStamp": sqlDate,
+            "UpdatedTimeStamp": sqlDate,
+            "ReportName": reportName,
+            "DeviceType": device,
+            "Session": auth
+        };
+        console.log(data, "data");
+        $.ajax({
+            url: RESTURL + 'api/userlogin/logg',
+            type: 'post',
+            data: data,
+            dataType: 'json',
+            async: true,
+            success: function (response) {
+                console.log(JSON.parse(response));
+            }
+        })
+    }
+
+
+
     });
 
-        $(document).ready(function () {
-            // debugger;
-            console.log(localStorage.getItem("auth"));
-            if (localStorage.getItem("auth") === "" || localStorage.getItem("auth") === null || localStorage.getItem("auth") === undefined) {
-                window.location.href = baseURL + "Home/Index";
-            }
-            //check ideal time of user
-            var IDLE_TIMEOUT = 1800; //seconds
-            var _idleSecondsTimer = null;
-            var _idleSecondsCounter = 0;
-
-
-
-            document.onclick = function () {
-                _idleSecondsCounter = 0;
-            };
-
-
-
-            document.onmousemove = function () {
-                _idleSecondsCounter = 0;
-            };
-
-
-
-            document.onkeypress = function () {
-                _idleSecondsCounter = 0;
-            };
-
-
-
-            _idleSecondsTimer = window.setInterval(CheckIdleTime, 1000);
-
-
-
-            function CheckIdleTime() {
-                _idleSecondsCounter++;
-                // console.log((IDLE_TIMEOUT - _idleSecondsCounter) + "")
-                if (_idleSecondsCounter >= IDLE_TIMEOUT) {
-                     window.clearInterval(_idleSecondsTimer);
-                        localStorage.clear();
-                     $(".container, .topMenu, .head-block-list, .submenu-new li, .download-block, .sync").click(function () {
-                        window.clearInterval(_idleSecondsTimer);
-                        localStorage.clear();
-                        window.location.href = baseURL + "Home/Index";
-                     });
-                    $('body').click(function () {
-                        window.clearInterval(_idleSecondsTimer);
-                        localStorage.clear();
-                        window.location.href = baseURL + "Home/Index";
-                    });
-            
-                }
+        function goToLandingPage() {
+                    //debugger;
+                    window.location.href = baseURL + "Home/Landing";
             }
 
-            $(".subLinks a, .sublinks p").click(function () {
-                //debugger;
-                var data = $(this).html();
-                console.log(data)
-                //debugger;
-                var rId = $(this).attr("id")
-                callLogAPI(data);
-                $(this).attr("href", baseURL + "Home/EmbedReport?" + "name=HOFinance" + "&sname=" + rId + "&d=d")
-            });
-
-
-
-
-   function callLogAPI(reportName) {
-                //debugger;
-    var data = {
-        "UserName": user,
-        "Year": year,
-        "ProjectName": "Chatime",
-        "Month": month,
-        "Date": sqlDate,
-        "createdTimeStamp": sqlDate,
-        "UpdatedTimeStamp": sqlDate,
-        "ReportName": reportName,
-        "DeviceType": device,
-        "Session": auth
-    };
-    console.log(data, "data");
-    $.ajax({
-        url: RESTURL + 'api/userlogin/logg',
-        type: 'post',
-        data: data,
-        dataType: 'json',
-        async: true,
-        success: function (response) {
-            console.log(JSON.parse(response));
-        }
-    })
-}
-
-
-
-});
-
-    function goToLandingPage() {
-                //debugger;
-                window.location.href = baseURL + "Home/Landing";
-        }
-
-    </script>
-    <script type="text/javascript" src="~/scripts/chatime.js"></script>
-    <script type="text/javascript" src="~/scripts/chatime-events.js"></script>
-</body>
-</html>
+        </script>
+        <script type="text/javascript" src="~/scripts/chatime.js"></script>
+        <script type="text/javascript" src="~/scripts/chatime-events.js"></script>
+    </body>
+    </html>

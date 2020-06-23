@@ -1,9 +1,6 @@
-var baseURL = "http://108.61.96.106:85/";
-    //http://108.61.96.106:85/ http://localhost:42734/
-var RESTURL = "http://108.61.96.106:65/";
-//var data = [];
-//console.log(localStorage.getItem("userRole"));
-//if (localStorage.getItem("userRole") == 1) {
+var baseURL = "https://intel.chatimebi.com.au/";
+    //http://localhost:42734/ https://intel.chatimebi.com.au/
+var RESTURL = "https://intel.chatimebi.com.au:65/";
 var w_data_One = [{
         blockhead: "Quick Stats",
         blockid: "QuickStats",
@@ -20,7 +17,7 @@ var w_data_One = [{
         fontIconClass: "icon-download",
         blockText:
             "Scorecard module reveals store insights on key areas with goals which will have direct effect on success of business operation.",
-        submenu: ["Scorecard Summary", "Aggregated View", "Monthly Run Rate"]
+        submenu: ["Scorecard Summary", "Aggregated View", "Monthly Run Rate", "Network Comparison"]
     },
     {
         blockhead: "Operations",
@@ -35,7 +32,10 @@ var w_data_One = [{
             "Daily Labour Analysis",
             "Actual Projected Labour",
             "Sales by Product Hierarchy",
-            "Mystery Shopper & QAR"
+            "Mystery Shopper & QAR",
+            "Sales By Sales Channel",
+            "Sales By Promotions",
+            "Daily Corp Stats Store View"
         ]
     },
     {
@@ -85,7 +85,7 @@ var w_data_zero = [
         fontIconClass: "icon-download",
         blockText:
             "Scorecard module reveals store insights on key areas with goals which will have direct effect on success of business operation.",
-        submenu: ["Scorecard Summary", "Aggregated View", "Monthly Run Rate"]
+        submenu: ["Scorecard Summary", "Aggregated View", "Monthly Run Rate", "Network Comparison"]
     },
     {
         blockhead: "Operations",
@@ -99,7 +99,10 @@ var w_data_zero = [
             "Daily Labour Analysis",
             "Actual Projected Labour",
             "Sales by Product Hierarchy",
-            "Mystery Shopper & QAR"
+            "Mystery Shopper & QAR",
+            "Sales By Sales Channel",
+            "Sales By Promotions",
+            "Daily Corp Stats Store View"
         ]
     },
     {

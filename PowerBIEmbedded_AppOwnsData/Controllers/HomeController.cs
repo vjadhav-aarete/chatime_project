@@ -24,6 +24,7 @@ namespace PowerBIEmbedded_AppOwnsData.Controllers
         private readonly IEmbedService m_SCSummary;
         private readonly IEmbedService m_SCAggView;
         private readonly IEmbedService m_SCMonthlyRunRate;
+        private readonly IEmbedService m_NetworkComparison;
 
         //Note: Finance Reports variable
         private readonly IEmbedService m_FinanceFYview;
@@ -36,6 +37,9 @@ namespace PowerBIEmbedded_AppOwnsData.Controllers
         private readonly IEmbedService m_OpActualProjectLabour;
         private readonly IEmbedService m_OpSalesByProductHierarchy;
         private readonly IEmbedService m_OpMysteryShopperQAR;
+        private readonly IEmbedService m_HOMAAUES;
+        private readonly IEmbedService m_OPsalesByPromotions;
+        private readonly IEmbedService m_OPdailyCropStoreView;
 
         //Note: Head Office Reports variable
         private readonly IEmbedService m_FinanceReport;
@@ -50,9 +54,11 @@ namespace PowerBIEmbedded_AppOwnsData.Controllers
         private readonly IEmbedService m_HOFLSSFY;
         private readonly IEmbedService m_HOFLSSF;
         private readonly IEmbedService m_HOFBST;
+        private readonly IEmbedService m_HOFRSD;
+        private readonly IEmbedService m_HOFSBS;
 
         //Note: Head Office Marketing Reports Variable
-        private readonly IEmbedService m_HOMAAUES;
+
         private readonly IEmbedService m_HOMBSR;
         private readonly IEmbedService m_HOMMAATV;
         private readonly IEmbedService m_HOMMR;
@@ -60,6 +66,7 @@ namespace PowerBIEmbedded_AppOwnsData.Controllers
         private readonly IEmbedService m_HOMSBTR;
         private readonly IEmbedService m_HOMTTMRBS;
         private readonly IEmbedService m_HOMBST;
+        private readonly IEmbedService m_HOMWR;
 
         //Note: Help Reports Variable
         private readonly IEmbedService m_HelpReport;
@@ -86,10 +93,15 @@ namespace PowerBIEmbedded_AppOwnsData.Controllers
             m_OpActualProjectLabour = new OPActualProjectLabour();
             m_OpSalesByProductHierarchy = new OPSalesProdHierarchy();
             m_OpMysteryShopperQAR = new OPMysteryShopperQAR();
+            m_HOMAAUES = new HOMAAUES();
+            m_OPsalesByPromotions = new OPsalesByPromotions();
+            m_OPdailyCropStoreView = new OPdailyCropStoreView();
             //Note: Scorecard Reports Constructor call
             m_SCSummary = new SCSummary();
             m_SCAggView = new SCAggView();
             m_SCMonthlyRunRate = new SCMonRunRate();
+            m_NetworkComparison = new NetworkComparison();
+
             //Note: Head Office Reports constructor call
             m_FinanceReport = new HOFinanceReportService();
             m_MarketingReport = new HOMarketingReportService();
@@ -102,8 +114,9 @@ namespace PowerBIEmbedded_AppOwnsData.Controllers
             m_HOFLSSFY = new HOFLSSFY();
             m_HOFLSSF = new HOFLSSF();
             m_HOFBST = new HOFBST();
+            m_HOFRSD = new HOFRSD();
+            m_HOFSBS = new HOFSBS();
             //Note: Head Offfice Marketing Constructor Call
-            m_HOMAAUES = new HOMAAUES();
             m_HOMBSR = new HOMBSR();
             m_HOMMAATV = new HOMMAATV();
             m_HOMMR = new HOMMR();
@@ -111,6 +124,7 @@ namespace PowerBIEmbedded_AppOwnsData.Controllers
             m_HOMSBTR = new HOMSBTR();
             m_HOMTTMRBS = new HOMTTMRBS();
             m_HOMBST = new HOMBST();
+            m_HOMWR = new HOMWR();
             //Note: Help Report constructor call
             m_HelpReport = new HelpReportService();
             //Note: Mobile Reports constructor call
@@ -236,6 +250,18 @@ namespace PowerBIEmbedded_AppOwnsData.Controllers
                 {
                     embedResult = await m_OpMysteryShopperQAR.EmbedReport(username, roles);
                 }
+                else if (reportName.ToLower() == "sales by sales channel")
+                {
+                    embedResult = await m_HOMAAUES.EmbedReport(username, roles);
+                }
+                else if (reportName.ToLower() == "sales by promotions")
+                {
+                    embedResult = await m_OPsalesByPromotions.EmbedReport(username, roles);
+                }
+                else if (reportName.ToLower() == "daily corp stats store view")
+                {
+                    embedResult = await m_OPdailyCropStoreView.EmbedReport(username, roles);
+                }
                 //Note: Head Office All Report
                 else if (reportName.ToLower() == "finance")
                 {
@@ -249,48 +275,56 @@ namespace PowerBIEmbedded_AppOwnsData.Controllers
                 //Note: Head Office Finance All Report  
                 else if (reportName.ToLower()=="hofinance") {
                     var sName = Request.QueryString["sname"].ToString();
-                if (sName == "fr1")
-                {
-                    embedResult = await m_HOFDCSSR.EmbedReport(username, roles);
-                }
-                else if (sName == "fr2")
-                {
-                    embedResult = await m_HOFSBDBMT.EmbedReport(username, roles);
-                }
-                else if (sName == "fr3")
-                {
-                    embedResult = await m_HOFSSFW.EmbedReport(username, roles);
-                }
-                else if (sName == "fr4")
-                {
-                    embedResult = await m_HOFGCS.EmbedReport(username, roles);
-                }
-                else if (sName == "fr5")
-                {
-                    embedResult = await m_HOFSSFMY.EmbedReport(username, roles);
-                }
-                else if (sName == "fr6")
-                {
-                    embedResult = await m_HOFLSSFY.EmbedReport(username, roles);
-                }
-                else if (sName == "fr7")
-                {
-                    embedResult = await m_HOFLSSF.EmbedReport(username, roles);
-                }
-                else
-                {
-                    embedResult = await m_HOFBST.EmbedReport(username, roles);
-                }
+                    if (sName == "fr1")
+                    {
+                        embedResult = await m_HOFDCSSR.EmbedReport(username, roles);
+                    }
+                    else if (sName == "fr2")
+                    {
+                        embedResult = await m_HOFSBDBMT.EmbedReport(username, roles);
+                    }
+                    else if (sName == "fr3")
+                    {
+                        embedResult = await m_HOFSSFW.EmbedReport(username, roles);
+                    }
+                    else if (sName == "fr4")
+                    {
+                        embedResult = await m_HOFGCS.EmbedReport(username, roles);
+                    }
+                    else if (sName == "fr5")
+                    {
+                        embedResult = await m_HOFSSFMY.EmbedReport(username, roles);
+                    }
+                    else if (sName == "fr6")
+                    {
+                        embedResult = await m_HOFLSSFY.EmbedReport(username, roles);
+                    }
+                    else if (sName == "fr7")
+                    {
+                        embedResult = await m_HOFLSSF.EmbedReport(username, roles);
+                    }
+                    else if (sName == "fr9")
+                    {
+                        embedResult = await m_HOFRSD.EmbedReport(username, roles);
+                    }
+                    else if (sName == "fr10")
+                    {
+                        embedResult = await m_HOFSBS.EmbedReport(username, roles);
+                    }
+                    else
+                    {
+                        embedResult = await m_HOFBST.EmbedReport(username, roles);
+                    }
             }
                 //Note: Head Office Marketing All Report Service
                 else if (reportName.ToLower() == "homarketing")
                 {
                     var sName = Request.QueryString["sname"].ToString();
-                    if (sName == "mr1")
+                    /*if (sName == "mr1")
                     {
                         embedResult = await m_HOMAAUES.EmbedReport(username, roles);
-                    }
-                    else if(sName == "mr2")
+                    }*/
+                     if(sName == "mr2")
                     {
                         embedResult = await m_HOMBSR.EmbedReport(username, roles);
                     }
@@ -314,13 +348,17 @@ namespace PowerBIEmbedded_AppOwnsData.Controllers
                     {
                         embedResult = await m_HOMTTMRBS.EmbedReport(username, roles);
                     }
+                    else if (sName == "mr8")
+                    {
+                        embedResult = await m_HOMWR.EmbedReport(username, roles);
+                    }
                     else
                     {
                         embedResult = await m_HOMBST.EmbedReport(username, roles);
                     }
                 }
                 //Note: Help Report Service
-                else if (reportName.ToLower() == "dashboard help")
+            else if (reportName.ToLower() == "dashboard help")
             {
                 embedResult = await m_HelpReport.EmbedReport(username, roles);
             }
@@ -333,6 +371,10 @@ namespace PowerBIEmbedded_AppOwnsData.Controllers
             {
                 embedResult = await m_SCAggView.EmbedReport(username, roles);
             }
+            else if(reportName.ToLower() == "network comparison")
+                {
+                    embedResult = await m_NetworkComparison.EmbedReport(username, roles);
+                }
             else
             {
                 //For monthly run rate
@@ -385,6 +427,18 @@ namespace PowerBIEmbedded_AppOwnsData.Controllers
                     {
                         return View(m_OpMysteryShopperQAR.EmbedConfig);
                     }
+                    else if (reportName.ToLower() == "sales by sales channel")
+                    {
+                        return View(m_HOMAAUES.EmbedConfig);
+                    }
+                    else if (reportName.ToLower() == "sales by promotions")
+                    {
+                        return View(m_OPsalesByPromotions.EmbedConfig);
+                    }
+                    else if (reportName.ToLower() == "daily corp stats store view")
+                    {
+                        return View(m_OPdailyCropStoreView.EmbedConfig);
+                    }
                     //Note: Head Office All Report
                     else if (reportName.ToLower() == "finance")
                     {
@@ -432,7 +486,17 @@ namespace PowerBIEmbedded_AppOwnsData.Controllers
                         //embedResult = await m_HOFLSSF.EmbedReport(username, roles);
                         return View(m_HOFLSSF.EmbedConfig);
                     }
-                    else 
+                    else if (sName == "fr9")
+                    {
+                               // embedResult = await m_HOFLSSFY.EmbedReport(username, roles);
+                                return View(m_HOFRSD.EmbedConfig);
+                    }
+                    else if (sName == "fr10")
+                    {
+                            //embedResult = await m_HOFSBS.EmbedReport(username, roles);
+                            return View(m_HOFSBS.EmbedConfig);
+                    }
+                        else 
                     {
                         //embedResult = await m_HOFBST.EmbedReport(username, roles);
                         return View(m_HOFBST.EmbedConfig);
@@ -442,11 +506,11 @@ namespace PowerBIEmbedded_AppOwnsData.Controllers
                 else if (reportName.ToLower() == "homarketing")
                 {
                     var sName = Request.QueryString["sname"].ToString();
-                    if (sName == "mr1")
+                    /*if (sName == "mr1")
                     {
                         return View(m_HOMAAUES.EmbedConfig);
-                    }
-                    else if (sName == "mr2")
+                    }*/
+                     if (sName == "mr2")
                     {
                         return View(m_HOMBSR.EmbedConfig);
                     }
@@ -470,7 +534,11 @@ namespace PowerBIEmbedded_AppOwnsData.Controllers
                     {
                         return View(m_HOMTTMRBS.EmbedConfig);
                     }
-                    else
+                    else if (sName == "mr8")
+                    {
+                        return View(m_HOMWR.EmbedConfig);
+                    }
+                        else
                     {
                         return View(m_HOMBST.EmbedConfig);
                     }
@@ -484,6 +552,10 @@ namespace PowerBIEmbedded_AppOwnsData.Controllers
                 else if (reportName.ToLower() == "scorecard summary")
                 {
                     return View(m_SCSummary.EmbedConfig);
+                }
+                else if (reportName.ToLower() == "network comparison")
+                {
+                        return View(m_NetworkComparison.EmbedConfig);
                 }
                 else if (reportName.ToLower() == "aggregated view")
                 {

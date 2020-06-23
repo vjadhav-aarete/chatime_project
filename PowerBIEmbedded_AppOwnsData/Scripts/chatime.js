@@ -1,9 +1,6 @@
-var baseURL = "http://108.61.96.106:85/";
-    //http://108.61.96.106:85/ http://localhost:42734/
-var RESTURL = "http://108.61.96.106:65/";
-//var data = [];
-//console.log(localStorage.getItem("userRole"));
-//if (localStorage.getItem("userRole") == 1) {
+var baseURL = "http://localhost:42734/";
+    //http://localhost:42734/ 
+var RESTURL = "https://intel.chatimebi.com.au:65/";
 var w_data_One = [{
         blockhead: "Quick Stats",
         blockid: "QuickStats",
@@ -20,7 +17,7 @@ var w_data_One = [{
         fontIconClass: "icon-download",
         blockText:
             "Scorecard module reveals store insights on key areas with goals which will have direct effect on success of business operation.",
-        submenu: ["Scorecard Summary", "Aggregated View", "Monthly Run Rate"]
+        submenu: ["Scorecard Summary", "Aggregated View", "Monthly Run Rate", "Network Comparison"]
     },
     {
         blockhead: "Operations",
@@ -35,7 +32,11 @@ var w_data_One = [{
             "Daily Labour Analysis",
             "Actual Projected Labour",
             "Sales by Product Hierarchy",
-            "Mystery Shopper & QAR"
+            "Mystery Shopper & QAR",
+            "Sales By Sales Channel",
+            "Sales By Promotions",
+            "Daily Corp Stats Store View",
+            "Staff Performance"
         ]
     },
     {
@@ -66,8 +67,7 @@ var w_data_One = [{
             "Help module provides understanding on KPI definitions and videos on each report for easy reference."
     }
     ];
-//}
-//else {
+
 var w_data_zero = [
     {
         blockhead: "Quick Stats",
@@ -85,7 +85,7 @@ var w_data_zero = [
         fontIconClass: "icon-download",
         blockText:
             "Scorecard module reveals store insights on key areas with goals which will have direct effect on success of business operation.",
-        submenu: ["Scorecard Summary", "Aggregated View", "Monthly Run Rate"]
+        submenu: ["Scorecard Summary", "Aggregated View", "Monthly Run Rate", "Network Comparison"]
     },
     {
         blockhead: "Operations",
@@ -99,7 +99,11 @@ var w_data_zero = [
             "Daily Labour Analysis",
             "Actual Projected Labour",
             "Sales by Product Hierarchy",
-            "Mystery Shopper & QAR"
+            "Mystery Shopper & QAR",
+            "Sales By Sales Channel",
+            "Sales By Promotions",
+            "Daily Corp Stats Store View",
+            "Staff Performance"
         ]
     },
     {
@@ -112,7 +116,7 @@ var w_data_zero = [
         submenu: ["Dashboard Help"]
     }
 ];
-//}
+
 
 var m_data = [
     {
@@ -146,6 +150,22 @@ var m_data = [
         ]
     }
 ];
+
+//Added code to configure here the submenu-> child menu
+var w_data_childmenu = [
+    {
+        parentid: "Operations",
+        submenuid: "Staff Performance",
+        submenuchildlinks : [
+            "Sales by Staff Member KPI Report",
+            "Sales by Staff Product",
+            "Product Sales by Staff Member",
+            "Sales to Member % Total Sales",
+            "Sales by Staff by Specific Discount (DM)"
+        ]
+    }
+];
+
 //var testData;
 //var url = '../json-data/menu-option.json';
 //$.ajax({
@@ -164,6 +184,7 @@ var m_data = [
 //Loading SideBarNavigation for desktop
 function sideBarNavigation() {
     var testData = "";
+    var testDataChild = "";
     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     if (isMobile) {
         testData = m_data;
@@ -171,13 +192,17 @@ function sideBarNavigation() {
     else {
         if (localStorage.getItem("userRole") == 1) {
             testData = w_data_One;
+            testDataChild = w_data_childmenu;
         }
         else {
             testData = w_data_zero;
+            testDataChild = w_data_childmenu;
         }
         
     }
     console.log(testData);
+    console.log(w_data_childmenu);
+    debugger;
     var html = "";
     html += '<li class="topMenu" style="cursor:pointer">';
     html += '<a>';
@@ -193,7 +218,32 @@ function sideBarNavigation() {
             for (var j = 0; j < testData[i].submenu.length; j++) {
                 html += ' <li id="' + testData[i].submenu[j] + '">' + testData[i].submenu[j] + ' <span class="blueDot"><span></li>';
             }
+            
             html += '</ul>';
+
+            /// Dynamic code to create div for childlinks.
+            //Start added code for submenue-> Child menu by navigation onclick
+            if (testDataChild.length > 0) {
+                for (var j = 0; j < testData[i].submenu.length; j++) {
+                    for (var k = 0; k < testDataChild.length; k++) {
+                        if ((testData[i].blockid == testDataChild[k].parentid) && (testData[i].submenu[j] == testDataChild[k].submenuid)) {
+                            if (testDataChild[k].submenuchildlinks) {
+                                //removing white space to create id
+                                var linkId = testData[i].submenu[j].replace(/[\s, \s&]+/g, "");
+                                html += '<div class="' + linkId + '-onclick" style="display:none;">';
+                                html += '<ul class="childlnk-onclick">';
+                                for (var l = 0; l < testDataChild[k].submenuchildlinks.length; l++) {
+                                    html += ' <li id="' + testDataChild[k].submenuchildlinks[l] + '">' + testDataChild[k].submenuchildlinks[l] + ' <span class="blueDot"><span></li>';
+                                }
+                                html += '</ul>';
+                                html += '</div>';
+                            }
+                        }
+                    }
+                }
+            }
+            //End added code for submenue-> Child menu by navigation onclick
+
             html += '<div class="submenuOnifHover">';
             html += '<ul class="submenu-new">';
             for (var j = 0; j < testData[i].submenu.length; j++) {
@@ -201,8 +251,30 @@ function sideBarNavigation() {
             }
             html += '</ul>';
             html += '</div>';
+
+            /// Dynamic code to create div for childlinks.
+            //Start added code for submenue-> Child menu onHover
+            if (testDataChild.length > 0) {
+                for (var j = 0; j < testData[i].submenu.length; j++) {
+                    for (var k = 0; k < testDataChild.length; k++) {
+                        if ((testData[i].blockid == testDataChild[k].parentid) && (testData[i].submenu[j] == testDataChild[k].submenuid)) {
+                            if (testDataChild[k].submenuchildlinks) {
+                                //removing white space to create id
+                                var linkId = testData[i].submenu[j].replace(/[\s, \s&]+/g, "");
+                                html += '<div class="' +linkId+ '-onHover" style="display:none;">';
+                                html += '<ul class="childlnk-onhover">';
+                                for (var l = 0; l < testDataChild[k].submenuchildlinks.length; l++) {
+                                    html += ' <li id="' + testDataChild[k].submenuchildlinks[l] + '">' + testDataChild[k].submenuchildlinks[l] + ' <span class="blueDot"><span></li>';
+                                }
+                                html += '</ul>';
+                                html += '</div>';
+                            }
+                        }
+                    }
+                }
+            }
+            //End added code for submenue-> Child menu onHover
         }
-        html += '</li>';
     }
     $(".navbar-list").append(html);
 

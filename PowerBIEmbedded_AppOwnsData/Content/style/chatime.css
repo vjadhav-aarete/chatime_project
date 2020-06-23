@@ -272,8 +272,8 @@
     font-size: 15.12px;
     line-height: 20px;
     border: none;
-    float:left;
-    z-index:999;
+    float: left;
+    z-index: 999;
     padding: 0 16px;
     margin-bottom: 17px;
     font-weight: 500;
@@ -386,7 +386,7 @@ li.head-block-list {
     display: block;
 }*/
 .submenu {
-    width: 150px;
+    width: 221px;
     color: #c8c8c8;
     font-family: "Segoe UI";
     font-size: 11px;
@@ -403,13 +403,24 @@ li.head-block-list {
     font-size: 11px;
     line-height: 30px;
     text-transform: capitalize;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
 }
 
-    .submenu li:hover,
-    .submenu-new li:hover {
-        color: #fff;
-        font-weight: bold;
-    }
+.submenu li:hover {
+    color: #fff;
+    font-weight: bold;
+}
+
+.submenu li {
+    padding-right: 75px;
+}
+
+.submenu-new li:hover {
+       color: #fff;
+       font-weight: bold;
+       width: 175px;
+}
 
 .menu-icon-top {
     width: 60px;
@@ -438,11 +449,11 @@ li.head-block-list {
         margin-left: 84px;
         margin-bottom: 14px;
     }
-    
+
 .dateandupload {
     width: 260px;
     float: right;
-    text-align: left;
+    text-align: center;
     color: #eaeaea;
     font-family: "Segoe UI";
     font-size: 12px;
@@ -555,6 +566,18 @@ svg {
     font-weight: 100;
 }
 
+.date p {
+    display: inline-block;
+    font-weight: 100;
+    float: right;
+    margin-right: 48px;
+    text-align: left;
+    color: #eaeaea;
+    font-family: "Segoe UI";
+    font-size: 12px;
+    line-height: 59px;
+}
+
 .sync,
 .download-block {
     height: 22px;
@@ -593,7 +616,7 @@ svg {
 }
 
 .topMenu {
-    padding: 30px 22px 34px 0 !important;
+    padding: 21px 22px 34px 0 !important;
     /*background-color: #5E2B7C;*/
 }
 
@@ -669,6 +692,8 @@ input::-ms-input-placeholder {
     line-height: 18px;
     font-family: segoe UI;
     padding: 20px 10px 20px 25px;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
 }
 
 .mobile-landind,
@@ -721,6 +746,7 @@ input::-ms-input-placeholder {
     .navbar-list::-webkit-scrollbar-thumb:hover {
         background: #673883;
     }
+
 .headOfficeBg {
     background-image: url('../../images/headofcbg.png');
     width: 96%;
@@ -753,3 +779,78 @@ input::-ms-input-placeholder {
     color: darkslateblue;
     font-weight: 500;
 }
+
+/* added for to scroll HeadOffice reports*/
+.scrollbar {
+    overflow-y: auto;
+    height: 70%;
+}
+
+/* added for to show submenu-> child menu on hover*/
+.childdiv-onhover {
+    display: none;
+    position: absolute;
+    margin-left: 270px;
+    background-color: #683984;
+    top: 0px;
+    text-align: left;
+    width: 166px;
+    color: #fff;
+    font-size: 10px;
+    line-height: 18px;
+    font-family: segoe UI;
+    padding: 20px 10px 20px 25px;
+    z-index: 9999;
+}
+
+
+.childlnk-onhover {
+    color: #c8c8c8;
+    font-family: "Segoe UI";
+    font-size: 11px;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+
+    .childlnk-onhover li:hover {
+        color: #fff;
+        font-weight: bold;
+    }
+
+        .childlnk-onhover li:hover .blueDot {
+            display: inline-block
+        }
+
+/* added for to show submenu-> child menu by navigation click */
+.childdiv-onclick {
+    display: none;
+    position: fixed;
+    margin-left: 220px;
+    background-color: #683984;
+    text-align: left;
+    width: 182px;
+    color: #fff;
+    font-size: 10px;
+    line-height: 18px;
+    font-family: segoe UI;
+    padding: 20px 10px 20px 25px;
+    z-index: 9999;
+}
+
+.childlnk-onclick {
+    color: #c8c8c8;
+    font-family: "Segoe UI";
+    font-size: 11px;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+
+    .childlnk-onclick li:hover {
+        color: #fff;
+        font-weight: bold;
+    }
+
+        .childlnk-onclick li:hover .blueDot {
+            display: inline-block
+        }
+

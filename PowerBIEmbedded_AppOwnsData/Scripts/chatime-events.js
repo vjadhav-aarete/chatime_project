@@ -18,6 +18,47 @@ var year = date.getFullYear().toString();
 
 var month = date.getMonth() + 1;
 month = month.toString();
+
+var testData = "";
+var testDataChild = "";
+var headId = "";
+
+var getMenuTop = [
+    {
+        menuId: "QuickStats",
+        menuTop: "94"
+    },
+    {
+        menuId: "Scorecard",
+        menuTop: "155"
+    },
+    {
+        menuId: "Operations",
+        menuTop: "215"
+    },
+    {
+        menuId: "Finance",
+        menuTop: "275"
+    },
+    {
+        menuId: "HeadOffice",
+        menuTop: "345"
+    },
+    {
+        menuId: "Help",
+        menuTop: "405"
+    }
+];
+
+if (localStorage.getItem("userRole") == 1) {
+    testData = w_data_One;
+    testDataChild = w_data_childmenu;
+}
+else {
+    testData = w_data_zero;
+    testDataChild = w_data_childmenu;
+}
+
 //var link = document.getElementById("loadCss");
 //if (isMobile) {
 //    link.setAttribute('href', "../Content/style/mobile.css");
@@ -32,7 +73,7 @@ $(document).ready(function () {
     window.addEventListener("orientationchange", function () {
         // Announce the new orientation number
         if (window.innerWidth < window.innerHeight) {
-          //  alert("landscape");
+            //  alert("landscape");
             $(".mobile-landind, .desktop_cont").css("display", "none");
             $(".orientation").css("display", "block");
         } else {
@@ -100,11 +141,21 @@ $(document).ready(function () {
     //    $('.m_menubar_overlay').css("display", "none");
     //});
 
-    
-
     //pass submenu value to the url
-    $(".submenu-new li, .submenu li, .m_overlay_submenu li").click(function () {
-        debugger;
+    $(".submenu-new li, .submenu li, .m_overlay_submenu li, .childlnk-onhover li, .childlnk-onclick li").click(function () {
+        var bChildLinks = false;
+        //code to check menu's has child links
+        for (var i = 0; i < testDataChild.length; i++) {
+            if (testDataChild[i].submenuid) {
+                if (testDataChild[i].submenuid == this.id) {
+                    bChildLinks = true;
+                }
+            }
+        }
+
+        if (bChildLinks)
+            return false;
+
         var report_name = $(this).attr('id');
         logReportName = report_name;
         $(this).addClass('activeLink');
@@ -118,7 +169,6 @@ $(document).ready(function () {
             //window.location.href = "http://localhost:42734/Home/EmbedReport?name=" + newReport_name + "&d=d";
         }
         else {
-           // debugger;
             //for Web
             if (report_name === "Finance") {
                 window.location.href = baseURL + "Home/HeadOffice?name=Finance";
@@ -129,7 +179,7 @@ $(document).ready(function () {
             else {
                 window.location.href = baseURL + "Home/EmbedReport?name=" + newReport_name + "&d=d";
             }
-            
+
             //window.location.href = "http://localhost:42734/Home/EmbedReport?name=" + newReport_name;
         }
         var activeMenu = report_name;
@@ -175,4 +225,123 @@ $(document).ready(function () {
         window.location.href = baseURL + "Home/Landing";
         sessionStorage.clear();
     });
-})
+});
+
+//Added function to display the subbmenu-> child menu
+$(document).ready(function () {
+    $(".submenu-new li").mouseover(function () {
+        var bChildLinks = false;
+        var menuTopH = "0";
+
+        for (var i = 0; i < testData.length; i++) {
+            if (testData[i].submenu) {
+                for (var j = 0; j < testData[i].submenu.length; j++) {
+                    if (testData[i].submenu[j] == this.id) {
+                        headId = testData[i].blockid;
+                    }
+                }
+            }
+        }
+        for (var i = 0; i < testDataChild.length; i++) {
+            if (testDataChild[i].submenuid) {
+                if (testDataChild[i].submenuid == this.id) {
+                    bChildLinks = true;
+                }
+            }
+        }
+        var submenuNewLi = [];
+        $('#' + headId + ' ' + '.submenu-new li').each(function () {
+            submenuNewLi.push($(this).text().trim());
+        });
+
+        var offsetTopH = "", liHeight = 30, index=0;
+        if(submenuNewLi.length > 0) {
+            index = submenuNewLi.indexOf(this.id);
+            offsetTopH = (index == 0) ? parseInt(menuTopH) : liHeight * index;
+        } 
+
+        var pId = (this.id).replace(/[\s, \s&]+/g, "") 
+        $('.' + pId + '-onHover').addClass("childdiv-onhover");
+        $('.' + pId + '-onHover ul').addClass("childlnk-onhover");
+
+        $('.' + pId + '-onHover').css("top", offsetTopH + 'px');
+        $('.' + pId + '-onHover').css("display", "inline-block");
+
+        $('.' + pId + '-onHover').mouseover(function () {
+            $('.' + pId + '-onHover').css("display", "inline-block");
+        });
+
+        $('.' + pId + '-onHover').mouseout(function () {
+            $('.' + pId + '-onHover').css("display", "none");
+        });
+
+    });
+
+    $(".submenu-new li").mouseleave(function () {
+        var id = (this.id).replace(/[\s, \s&]+/g, "");
+        $('.' + id + '-onHover').css("display", "none");
+    });
+
+});
+
+//Added function to display the subbmenu-> child menu by Navigation click
+$(document).ready(function () {
+    $(".submenu li").mouseover(function () {
+        var bChildLinks = false;
+        var menuTopH = "0";
+
+        for (var i = 0; i < testData.length; i++) {
+            if (testData[i].submenu) {
+                for (var j = 0; j < testData[i].submenu.length; j++) {
+                    if (testData[i].submenu[j] == this.id) {
+                        headId = testData[i].blockid;
+                    }
+                }
+            }
+        }
+        for (var i = 0; i < testDataChild.length; i++) {
+            if (testDataChild[i].submenuid) {
+                if (testDataChild[i].submenuid == this.id) {
+                    bChildLinks = true;
+                }
+            }
+        }
+        var submenuNewLi = [];
+        $('#' + headId + ' ' + '.submenu li').each(function () {
+            submenuNewLi.push($(this).text().trim());
+        });
+
+        var offsetTopH = "", liHeight = 30, index = 0, liTop = "0";
+        for (var j = 0; j < getMenuTop.length; j++) {
+            if (getMenuTop[j].menuId === headId)
+                liTop = getMenuTop[j].menuTop; 
+        }
+
+        if (submenuNewLi.length > 0)
+            index = submenuNewLi.indexOf(this.id);
+
+        offsetTopH = (index == 0) ? parseInt(liTop) : (submenuNewLi.length - 1) * liHeight + parseInt(liTop);
+
+        var pId = (this.id).replace(/[\s, \s&]+/g, "")
+        $('.' + pId + '-onclick').addClass("childdiv-onclick");
+        $('.' + pId + '-onclick ul').addClass("childlnk-onclick");
+
+        $('.' + pId + '-onclick').css("top", offsetTopH + 'px');
+        $('.' + pId + '-onclick').css("display", "inline-block");
+
+        $('.' + pId + '-onclick').mouseover(function () {
+            $('.' + pId + '-onclick').css("display", "inline-block");
+        });
+
+        $('.' + pId + '-onclick').mouseout(function () {
+            $('.' + pId + '-onclick').css("display", "none");
+        });
+
+    });
+
+    $(".submenu li").mouseleave(function () {
+        var id = (this.id).replace(/[\s, \s&]+/g, "");
+        $('.' + id + '-onclick').css("display", "none");
+    });
+
+});

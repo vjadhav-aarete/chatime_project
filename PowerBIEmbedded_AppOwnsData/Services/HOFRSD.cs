@@ -14,14 +14,14 @@ using System.Web.Mvc;
 
 namespace PowerBIEmbedded_AppOwnsData.Services
 {
-    public class HOMAAUES : IEmbedService
+    public class HOFRSD : IEmbedService
     {
         private static readonly string AuthorityUrl = ConfigurationManager.AppSettings["authorityUrl"];
         private static readonly string ResourceUrl = ConfigurationManager.AppSettings["resourceUrl"];
         private static readonly string ApplicationId = ConfigurationManager.AppSettings["applicationId"];
         private static readonly string ApiUrl = ConfigurationManager.AppSettings["apiUrl"];
         private static readonly string WorkspaceId = ConfigurationManager.AppSettings["workspaceId"];
-        private static readonly string ReportId = ConfigurationManager.AppSettings["salesBySalesChannel"];
+        private static readonly string ReportId = ConfigurationManager.AppSettings["HOFRSD"];
 
         private static readonly string AuthenticationType = ConfigurationManager.AppSettings["AuthenticationType"];
         private static readonly NameValueCollection sectionConfig = ConfigurationManager.GetSection(AuthenticationType) as NameValueCollection;
@@ -44,7 +44,7 @@ namespace PowerBIEmbedded_AppOwnsData.Services
         private TileEmbedConfig m_tileEmbedConfig;
         private TokenCredentials m_tokenCredentials;
 
-        public HOMAAUES()
+        public HOFRSD()
         {
             m_tokenCredentials = null;
             m_embedConfig = new EmbedConfig();

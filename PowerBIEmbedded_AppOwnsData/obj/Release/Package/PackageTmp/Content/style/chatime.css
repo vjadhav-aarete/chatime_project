@@ -442,7 +442,7 @@ li.head-block-list {
 .dateandupload {
     width: 260px;
     float: right;
-    text-align: left;
+    text-align: center;
     color: #eaeaea;
     font-family: "Segoe UI";
     font-size: 12px;
@@ -555,6 +555,18 @@ svg {
     font-weight: 100;
 }
 
+.date p {
+    display: inline-block;
+    font-weight: 100;
+    float: right;
+    margin-right: 48px;
+    text-align: left;
+    color: #eaeaea;
+    font-family: "Segoe UI";
+    font-size: 12px;
+    line-height: 59px;
+}
+
 .sync,
 .download-block {
     height: 22px;
@@ -593,7 +605,7 @@ svg {
 }
 
 .topMenu {
-    padding: 30px 22px 34px 0 !important;
+    padding: 21px 22px 34px 0 !important;
     /*background-color: #5E2B7C;*/
 }
 

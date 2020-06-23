@@ -41,7 +41,7 @@
                 <p class="sync">
                     <i class="icon-refresh"></i>
                 </p>
-                <p class="download-block">
+                <p class="download-block" style="display: none !important;">
                     <i class="icon-reports"></i>
                 </p>
             </div>
@@ -78,7 +78,7 @@
         <div class="mobile-landind">
             <div class="mobile-top-bar">
                 <div class="mobile-menu-icon"> <i class="icon-menu" style="font-size: 13px; display:none"></i></div>
-                <div class="mobile-chatime-logo"><img src="~/images/chatimeLogo3x.png" alt="chatime" title="chatime" /></div>
+                <div class="mobile-chatime-logo"><img src="~/images/Chatime_Logo@1.5x.svg" alt="chatime" title="chatime" /></div>
                 <div class="mobile-refresh-icon"><p class="sync"><i class="icon-refresh"></i></p></div>
                 @*<div class="mobile-user-icon"><p class="download-block"><i class="icon-reports"></i></p></div>*@
                 <div class="m_logout"><i class="icon-signout"></i></div>
@@ -202,9 +202,9 @@
                 if (activeIdName === "Quick Stats" || activeIdName === "Quick Stats LFL") {
                     $("#QuickStats i").css("opacity", "1");
                 }
-                else if (activeIdName === "Scorecard Summary" || activeIdName === "Aggregated View" || activeIdName === "Monthly Run Rate") {
+                else if (activeIdName === "Scorecard Summary" || activeIdName === "Aggregated View" || activeIdName === "Monthly Run Rate" || activeIdName ==="Network Comparison") {
                     $("#Scorecard i").css("opacity", "1");
-                } else if (activeIdName === "Operational Insights" || activeIdName === "Daily Labour Analysis" || activeIdName === "Actual Projected Labour" || activeIdName === "Sales by Product Hierarchy" || activeIdName === "Mystery Shopper & QAR") {
+                } else if (activeIdName === "Operational Insights" || activeIdName === "Daily Labour Analysis" || activeIdName === "Actual Projected Labour" || activeIdName === "Sales by Product Hierarchy" || activeIdName === "Mystery Shopper & QAR" || activeIdName === "Mystery Shopper  QAR" || activeIdName === "Sales By Sales Channel" || activeIdName === "Sales By Promotions" || activeIdName === "Daily Corp Stats Store View" || activeIdName === "Staff Performance" || activeIdName === "Sales by Staff Member KPI Report" || activeIdName === "Sales by Staff Product" || activeIdName === "Product Sales by Staff Member" || activeIdName === "Sales to Member % Total Sales" || activeIdName === "Sales by Staff by Specific Discount (DM)") {
                     $("#Operations i").css("opacity", "1");
                 }
                 else if (activeIdName === "PL FY View" || activeIdName === "PL Head Office View" || activeIdName === "PL Multi Location View") {

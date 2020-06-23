@@ -190,7 +190,9 @@
     <Compile Include="Services\HOFinanceReportService.cs" />
     <Compile Include="Services\HOFLSSF.cs" />
     <Compile Include="Services\HOFLSSFY.cs" />
+    <Compile Include="Services\HOFRSD.cs" />
     <Compile Include="Services\HOFSBDBMT.cs" />
+    <Compile Include="Services\HOFSBS.cs" />
     <Compile Include="Services\HOFSSFMY.cs" />
     <Compile Include="Services\HOFSSFW.cs" />
     <Compile Include="Services\HOMAAUES.cs" />
@@ -202,15 +204,19 @@
     <Compile Include="Services\HOMPSC.cs" />
     <Compile Include="Services\HOMSBTR.cs" />
     <Compile Include="Services\HOMTTMRBS.cs" />
+    <Compile Include="Services\HOMWR.cs" />
     <Compile Include="Services\IEmbedService.cs" />
     <Compile Include="Services\MobileDailyLabourReportService.cs" />
     <Compile Include="Services\MobileQuickStatLFLReportService.cs" />
     <Compile Include="Services\MobileQuickStatReportServie.cs" />
     <Compile Include="Services\MobileSCSummaryService.cs" />
+    <Compile Include="Services\NetworkComparison.cs" />
     <Compile Include="Services\OPActualProjectLabour.cs" />
+    <Compile Include="Services\OPdailyCropStoreView.cs" />
     <Compile Include="Services\OPDailyLabourAnalysis.cs" />
     <Compile Include="Services\OPInsight.cs" />
     <Compile Include="Services\OPMysteryShopperQAR.cs" />
+    <Compile Include="Services\OPsalesByPromotions.cs" />
     <Compile Include="Services\OPSalesProdHierarchy.cs" />
     <Compile Include="Services\QuickStatLFLEmbedService.cs" />
     <Compile Include="Services\SCAggView.cs" />
@@ -237,6 +243,7 @@
     <Content Include="images\BG-mobile%403x.png" />
     <Content Include="images\chatimeBG3x.png" />
     <Content Include="images\chatimeLogo3x.png" />
+    <Content Include="images\Chatime_Logo%401.5x.svg" />
     <Content Include="images\Download-Document.svg" />
     <Content Include="images\exclamation-circle.svg" />
     <Content Include="images\finance-icon.svg" />
