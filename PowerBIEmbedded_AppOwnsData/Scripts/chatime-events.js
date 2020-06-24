@@ -313,8 +313,11 @@ $(document).ready(function () {
 
         var offsetTopH = "", liHeight = 30, index = 0, liTop = "0";
         for (var j = 0; j < getMenuTop.length; j++) {
-            if (getMenuTop[j].menuId === headId)
-                liTop = getMenuTop[j].menuTop; 
+            if (getMenuTop[j].menuId === headId) {
+                //getting Top if navbar-list scrolled down
+                var scrollMove = ($(".navbar-list").scrollTop());
+                liTop = (scrollMove == 0) ? getMenuTop[j].menuTop : (getMenuTop[j].menuTop) - scrollMove;
+            }    
         }
 
         if (submenuNewLi.length > 0)
