@@ -323,7 +323,7 @@ $(document).ready(function () {
         if (submenuNewLi.length > 0)
             index = submenuNewLi.indexOf(this.id);
 
-        offsetTopH = (index == 0) ? parseInt(liTop) : (submenuNewLi.length - 1) * liHeight + parseInt(liTop);
+        offsetTopH = (index == 0) ? parseInt(liTop) : (index * liHeight) + parseInt(liTop);
 
         var pId = (this.id).replace(/[\s, \s&]+/g, "")
         $('.' + pId + '-onclick').addClass("childdiv-onclick");
